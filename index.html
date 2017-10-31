@@ -41,7 +41,7 @@
           <li>
             <form action="" method="get">
               <label class="navigation-user-search">
-                <span class="visually-hidden">Поиск по сайту:</span>
+                <span class="visually-hidden">Поиск по сайту: </span>
                 <input type="search" name="search" placeholder="Что ищем?">
               </label>
             </form>
@@ -50,11 +50,11 @@
             <a class="navigation-user-login" href="#">Вход</a>
             <form action="" method="post">
               <label>
-                <span class="visually-hidden">Электронная почта:</span>
+                <span class="visually-hidden">Электронная почта: </span>
                 <input type="email" name="email" placeholder="Электронная почта">
               </label>
               <label>
-                <span class="visually-hidden">Пароль:</span>
+                <span class="visually-hidden">Пароль: </span>
                 <input type="password" name="password" placeholder="Пароль">
               </label>
               <button class="button" type="submit">Войти</button>
@@ -65,9 +65,23 @@
             </form>
           </li>
           <li>
-            
+            <a class="navigation-user-cart" href="#" data-amount="0">
+              <span class="visually-hidden">Ваша корзина: </span>Пусто
+            </a>
+            <form action="" method="post">
+              <table>
+                <caption class="visually-hidden">
+                  Вы выбрали:
+                </caption>
+                <tr>
+                  <td colspan="6">Итого: 0 руб.</td>
+                </tr>
+              </table>
+              <button class="button" class="submit">Оформить заказ</button>
+            </form>
           </li>
         </ul>
+        
       </nav>
 
     </header>
