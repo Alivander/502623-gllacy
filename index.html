@@ -251,6 +251,19 @@
 
     </footer>
 
+    <form class="modal modal-message" action="" method="post">
+      <h2 class="visually-hidden">Написать нам</h2>
+      <b>Мы обязательно вам ответим!</b>
+      <label class="visually-hidden" for="message-name">Представьтесь: </label>
+      <input type="text" name="name" id="message-name" placeholder="Как вас зовут?">
+      <label class="visually-hidden" for="message-mail">Электронная почта для ответа: </label>
+      <input type="email" name="email" id="message-email" placeholder="Ваша почта для ответа?">
+      <p class="visually-hidden">Введите текст вашего сообщения:</p>
+      <textarea>Напишите что-нибудь...</textarea>
+      <button class="button" type="submit">Отправить</button>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    </form>
+
     <!--Вспомогательный скрипт для LiveReload,
         будет удален из итогового файла-->
     <script>
