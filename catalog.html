@@ -49,20 +49,20 @@
     </nav>
 
     <ul class="navigation-user">
-      <li>
-        <a class="navigation-user-search" href="#">
+      <li class="navigation-user-search">
+        <a href="#">
           <span class="visually-hidden">Поиск по сайту</span>
         </a>
-        <!-- <form action="" method="get">
+        <form action="https://echo.htmlacademy.ru" method="get">
           <label>
             <span class="visually-hidden">Введите запрос для поиска: </span>
             <input type="search" name="search" placeholder="Что ищем?">
           </label>
-        </form> -->
+        </form>
       </li>
-      <li>
-        <a class="navigation-user-login" href="#">Вход</a>
-        <!-- <form action="" method="post">
+      <li class="navigation-user-login">
+        <a href="#">Вход</a>
+        <form action="https://echo.htmlacademy.ru" method="post">
           <label>
             <span class="visually-hidden">Электронная почта: </span>
             <input type="email" name="email" placeholder="Электронная почта">
@@ -76,13 +76,13 @@
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
           </p>
-        </form> -->
+        </form>
       </li>
-      <li>
-        <a class="navigation-user-cart" href="#" data-amount="2">
+      <li class="navigation-user-cart">
+        <a href="#" data-amount="2">
           <span class="visually-hidden">Ваша корзина: </span>2 товара
         </a>
-        <!-- <form action="" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <table>
             <caption class="visually-hidden">Вы выбрали:</caption>
             <tr>
@@ -104,7 +104,7 @@
               <td>
                 <img src="img/product-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
               </td>
-              <td>Пломбир с апельсиновым джемом</td>
+              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
               <td>1,5 кг x </td>
               <td>300 руб.</td>
               <td>450 руб.</td>
@@ -114,7 +114,7 @@
             </tr>
           </table>
           <button class="button" class="submit">Оформить заказ</button>
-        </form> -->
+        </form>
       </li>
     </ul>
 
@@ -141,7 +141,71 @@
 
     <h1>Сливочное мороженое</h1>
 
-    <!--форма с фильтрами-->
+    <section vlass="filters">
+      <h2 class="visually-hidden">Фильтры по товарам</h2>
+      <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="filters-sorting">
+          <legend>Сортровка:</legend>
+          <select name="sorting">
+            <option value="popular" selected>по популярности</option>
+            <option value="min-price">сначала недорогие</option>
+            <option value="max-price">сначала дорогие</option>
+            <option value="fat-content">по жирности</option>
+          </select>
+        </fieldset>
+        <fieldset class="filters-price" oninput="">
+          <legend>
+            Цена
+            <output name="min-price">100</output>
+            руб. -
+            <output name="max-price">500</output>
+            руб.
+          </legend>
+          <div class="filters-price-scale"></div>
+          <div class="filters-price-scale-fill"></div>
+          <div class="filters-price-min" tabindex=0>
+            <span class="visually-hidden">Минимальная цена</span>
+          </div>
+          <div class="filters-price-max" tabindex=0>
+            <span class="visually-hidden">Максимальая цена</span>
+          </div>
+        </fieldset>
+        <fieldset class="fat-content">
+          <legend>Жирность</legend>
+          <label>
+            <input class="visually-hidden" type="radio" name="fat-content" value="0"> 0%
+          </label>
+          <label>
+            <input class="visually-hidden" type="radio" name="fat-content" value="0-10" checked> 10%
+          </label>
+          <label>
+            <input class="visually-hidden" type="radio" name="fat-content" value="0-30"> 30%
+          </label>
+          <label>
+            <input class="visually-hidden" type="radio" name="fat-content" value="30-100"> выше 30%
+          </label>
+        </fieldset>
+        <fieldset class="fillers">
+          <legend>Наполнители:</legend>
+          <label>
+            <input class="visually-hidden" type="checkbox" name="chokolate" checked> шоколадные
+          </label>
+          <label>
+            <input class="visually-hidden" type="checkbox" name="sugar-powders" checked> сахарные присыпки
+          </label>
+          <label>
+            <input class="visually-hidden" type="checkbox" name="fruit"> фрукты
+          </label>
+          <label>
+            <input class="visually-hidden" type="checkbox" name="syrops"> сиропы
+          </label>
+          <label>
+            <input class="visually-hidden" type="checkbox" name="jams"> джемы
+          </label>
+        </fieldset>
+        <button type="submit">Применить</button>
+      </form>
+    </section>
 
     <section class="products">
 
@@ -153,7 +217,9 @@
         <p class="products-item-price">
           <strong>310<span class="visually-hidden"> рублей</span></strong>/кг
         </p>
-        <div class="products-item-hover"><a class="button" href="#">Быстрый просмотр</a></div>
+        <div class="products-item-hover">
+          <a class="button" href="#">Быстрый просмотр</a>
+        </div>
       </article>
 
       <article class="products-item">
@@ -162,7 +228,9 @@
         <p class="products-item-price">
           <strong>380<span class="visually-hidden"> рублей</span></strong>/кг
         </p>
-        <div class="products-item-hover"><a class="button" href="#">Быстрый просмотр</a></div>
+        <div class="products-item-hover">
+          <a class="button" href="#">Быстрый просмотр</a>
+        </div>
       </article>
 
       <article class="products-item">
@@ -171,7 +239,9 @@
         <p class="products-item-price">
           <strong>355<span class="visually-hidden"> рублей</span></strong>/кг
         </p>
-        <div class="products-item-hover"><a class="button" href="#">Быстрый просмотр</a></div>
+        <div class="products-item-hover">
+          <a class="button" href="#">Быстрый просмотр</a>
+        </div>
       </article>
 
       <article class="products-item">
@@ -180,7 +250,9 @@
         <p class="products-item-price">
           <strong>415<span class="visually-hidden"> рублей</span></strong>/кг
         </p>
-        <div class="products-item-hover"><a class="button" href="#">Быстрый просмотр</a></div>
+        <div class="products-item-hover">
+          <a class="button" href="#">Быстрый просмотр</a>
+        </div>
       </article>
 
       <article class="products-item">
@@ -189,7 +261,9 @@
         <p class="products-item-price">
           <strong>325<span class="visually-hidden"> рублей</span></strong>/кг
         </p>
-        <div class="products-item-hover"><a class="button" href="#">Быстрый просмотр</a></div>
+        <div class="products-item-hover">
+          <a class="button" href="#">Быстрый просмотр</a>
+        </div>
       </article>
 
       <article class="products-item">
@@ -198,7 +272,9 @@
         <p class="products-item-price">
           <strong>410<span class="visually-hidden"> рублей</span></strong>/кг
         </p>
-        <div class="products-item-hover"><a class="button" href="#">Быстрый просмотр</a></div>
+        <div class="products-item-hover">
+          <a class="button" href="#">Быстрый просмотр</a>
+        </div>
       </article>
 
       <article class="products-item">
@@ -207,7 +283,9 @@
         <p class="products-item-price">
           <strong>375<span class="visually-hidden"> рублей</span></strong>/кг
         </p>
-        <div class="products-item-hover"><a class="button" href="#">Быстрый просмотр</a></div>
+        <div class="products-item-hover">
+          <a class="button" href="#">Быстрый просмотр</a>
+        </div>
       </article>
 
       <article class="products-item">
@@ -216,7 +294,9 @@
         <p class="products-item-price">
           <strong>320<span class="visually-hidden"> рублей</span></strong>/кг
         </p>
-        <div class="products-item-hover"><a class="button" href="#">Быстрый просмотр</a></div>
+        <div class="products-item-hover">
+          <a class="button" href="#">Быстрый просмотр</a>
+        </div>
       </article>
 
       <article class="products-item">
@@ -225,7 +305,9 @@
         <p class="products-item-price">
           <strong>440<span class="visually-hidden"> рублей</span></strong>/кг
         </p>
-        <div class="products-item-hover"><a class="button" href="#">Быстрый просмотр</a></div>
+        <div class="products-item-hover">
+          <a class="button" href="#">Быстрый просмотр</a>
+        </div>
       </article>
 
       <article class="products-item">
@@ -234,7 +316,9 @@
         <p class="products-item-price">
           <strong>435<span class="visually-hidden"> рублей</span></strong>/кг
         </p>
-        <div class="products-item-hover"><a class="button" href="#">Быстрый просмотр</a></div>
+        <div class="products-item-hover">
+          <a class="button" href="#">Быстрый просмотр</a>
+        </div>
       </article>
 
       <article class="products-item">
@@ -243,7 +327,9 @@
         <p class="products-item-price">
           <strong>355<span class="visually-hidden"> рублей</span></strong>/кг
         </p>
-        <div class="products-item-hover"><a class="button" href="#">Быстрый просмотр</a></div>
+        <div class="products-item-hover">
+          <a class="button" href="#">Быстрый просмотр</a>
+        </div>
       </article>
 
       <article class="products-item">
@@ -252,7 +338,9 @@
         <p class="products-item-price">
           <strong>420<span class="visually-hidden"> рублей</span></strong>/кг
         </p>
-        <div class="products-item-hover"><a class="button" href="#">Быстрый просмотр</a></div>
+        <div class="products-item-hover">
+          <a class="button" href="#">Быстрый просмотр</a>
+        </div>
       </article>
 
     </section>
@@ -343,6 +431,12 @@
     </div>
 
   </footer>
+
+  <!--Вспомогательный скрипт для LiveReload,
+      будет удален из итогового файла-->
+  <script>
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+  </script>
 
 </body>
 </html>

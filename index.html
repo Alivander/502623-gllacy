@@ -49,20 +49,20 @@
     </nav>
 
     <ul class="navigation-user">
-      <li>
-        <a class="navigation-user-search" href="#">
+      <li class="navigation-user-search">
+        <a href="#">
           <span class="visually-hidden">Поиск по сайту</span>
         </a>
-        <!-- <form action="" method="get">
+        <form action="https://echo.htmlacademy.ru" method="get">
           <label>
             <span class="visually-hidden">Введите запрос для поиска: </span>
             <input type="search" name="search" placeholder="Что ищем?">
           </label>
-        </form> -->
+        </form>
       </li>
-      <li>
-        <a class="navigation-user-login" href="#">Вход</a>
-        <!-- <form action="" method="post">
+      <li class="navigation-user-login">
+        <a href="#">Вход</a>
+        <form action="https://echo.htmlacademy.ru" method="post">
           <label>
             <span class="visually-hidden">Электронная почта: </span>
             <input type="email" name="email" placeholder="Электронная почта">
@@ -76,13 +76,13 @@
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
           </p>
-        </form> -->
+        </form>
       </li>
-      <li>
-        <a class="navigation-user-cart" href="#" data-amount="0">
+      <li class="navigation-user-cart">
+        <a href="#" data-amount="0">
           <span class="visually-hidden">Ваша корзина: </span>Пусто
         </a>
-        <!-- <form action="" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <table>
             <caption class="visually-hidden">Вы выбрали:</caption>
             <tr>
@@ -90,7 +90,7 @@
             </tr>
           </table>
           <button class="button" class="submit" disabled>Оформить заказ</button>
-        </form> -->
+        </form>
       </li>
     </ul>
 
@@ -108,7 +108,7 @@
       <h2 class="visually-hidden">Популярные товары</h2>
 
       <div class="slider-controls">
-        <input class="visually-hidden" type="radio" name="slider" id="slide-1">
+        <input class="visually-hidden" type="radio" name="slider" id="slide-1" checked>
         <label for="slide-1">
           <span class="visually-hidden">Слайд №1</span>
         </label>
@@ -168,7 +168,9 @@
         <p class="products-item-price">
           <strong>310<span class="visually-hidden"> рублей</span></strong>/кг
         </p>
-        <div class="products-item-hover"><a class="button" href="#">Быстрый просмотр</a></div>
+        <div class="products-item-hover">
+          <a class="button" href="#">Быстрый просмотр</a>
+        </div>
       </article>
 
       <article class="products-item product-item-best">
@@ -178,7 +180,9 @@
         <p class="products-item-price">
           <strong>380<span class="visually-hidden"> рублей</span></strong>/кг
         </p>
-        <div class="products-item-hover"><a class="button" href="#">Быстрый просмотр</a></div>
+        <div class="products-item-hover">
+          <a class="button" href="#">Быстрый просмотр</a>
+        </div>
       </article>
 
       <article class="products-item product-item-best">
@@ -188,7 +192,9 @@
         <p class="products-item-price">
           <strong>355<span class="visually-hidden"> рублей</span></strong>/кг
         </p>
-        <div class="products-item-hover"><a class="button" href="#">Быстрый просмотр</a></div>
+        <div class="products-item-hover">
+          <a class="button" href="#">Быстрый просмотр</a>
+        </div>
       </article>
 
       <article class="products-item product-item-best">
@@ -198,7 +204,9 @@
         <p class="products-item-price">
           <strong>415<span class="visually-hidden"> рублей</span></strong>/кг
         </p>
-        <div class="products-item-hover"><a class="button" href="#">Быстрый просмотр</a></div>
+        <div class="products-item-hover">
+          <a class="button" href="#">Быстрый просмотр</a>
+        </div>
       </article>
 
     </section>
@@ -226,15 +234,15 @@
       <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
     </div>
 
-    <!-- <div class="subscribe">
+    <section class="subscribe">
       <h2 class="visually-hidden">Наша рассылка</h2>
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <form class="subscribe-form" action="https://test.action.ru" method="post">
+      <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
         <label class="visually-hidden" for="subscribe">Введите адрес вашей электронной почты: </label>
-        <input type="email" name="email" id="subscribe" placeholder="Электронная почта">
+        <input type="email" name="email" value="" id="subscribe" placeholder="Электронная почта">
         <button class="button" type="submit">Отправить</button>
       </form>
-    </div> -->
+    </section>
 
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
@@ -298,20 +306,22 @@
 
   </footer>
 
-  <!-- <div class="modal modal-message">
+  <section class="modal modal-message">
     <h2 class="visually-hidden">Написать нам</h2>
     <b>Мы обязательно вам ответим!</b>
-    <form action="https://test.action.ru" method="post">
+    <form action="https://echo.htmlacademy.ru" method="post">
       <label class="visually-hidden" for="message-name">Представьтесь: </label>
       <input type="text" name="name" id="message-name" placeholder="Как вас зовут?">
       <label class="visually-hidden" for="message-email">Электронная почта для ответа: </label>
-      <input type="email" name="email" id="message-email" placeholder="Ваша почта для ответа?">
+      <input type="email" name="email" value="" id="message-email" placeholder="Ваша почта для ответа?">
       <p class="visually-hidden">Введите текст вашего сообщения:</p>
       <textarea>Напишите что-нибудь...</textarea>
       <button class="button" type="submit">Отправить</button>
-      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </form>
-  </div> -->
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+  </section>
 
   <!--Вспомогательный скрипт для LiveReload,
       будет удален из итогового файла-->
