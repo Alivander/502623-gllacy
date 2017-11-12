@@ -1,0 +1,70 @@
+/* Первое из дух вспомогательных css-правил.
+   Будет удалено из итогового проекта. */
+*, ::before, ::after {
+  outline: 1px dashed grey;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*------------------------------------*\
+    #COMMON-TAGS
+\*------------------------------------*/
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+
+
+/*------------------------------------*\
+    #COMMON-CLASSES
+\*------------------------------------*/
+
+.container {
+  width: ----px;
+  margin: 0 auto;
+  padding: 0 ----px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Второе из дух вспомогательных css-правил.
+   Будет удалено из итогового проекта. */
+   *, ::before, ::after {
+     outline: none;
+   }
