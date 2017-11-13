@@ -221,6 +221,26 @@ a:hover {
   box-shadow: inset 0px 1px 0px 0px #cacac7;
 }
 
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.operating-mode {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+}
+
+.operating-mode a {
+  display: block;
+  font-size: 22px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+
 /*------------------------------------*\
     #INDEX-CONTENT
 \*------------------------------------*/
