@@ -185,7 +185,24 @@ a:hover {
   background-color: #ffffff;
 }
 
+.navigation-user form {
+  color: #323232;
+  font-size: 13px;
+  line-height: 16px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+}
 
+.navigation-user input {
+  font-size: 14px;
+  line-height: 24px;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.navigation-user input::placeholder {
+  color: #999999;
+}
 
 /*------------------------------------*\
     #INDEX-CONTENT
