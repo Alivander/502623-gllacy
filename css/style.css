@@ -270,7 +270,32 @@ a:hover {
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
 
+/*  #ACTIONS --------------------------*/
 
+.actions {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.actions .berry {
+  background-color: #7a0c1d;
+  background-image: url("../img/background-berry.jpg");
+}
+
+.actions .chocolate {
+  background-color: #362016;
+  background-image: url("../img/background-chocolate.jpg");
+}
+
+.actions-item {
+  border-radius: 14px;
+}
+
+.actions-item h3 {
+  font-size: 35px;
+  line-height: 41px;
+}
 
 /*------------------------------------*\
     #INNER-CONTENT
