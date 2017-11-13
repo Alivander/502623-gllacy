@@ -15,6 +15,13 @@ body {
   font-family: "Roboto", "Tahoma", sans-serif;
   color: #ffffff;
   background-color: #849d8f;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-color: #849d8f;
+  background-image: url("../img/slide-1.png");
 }
 
 
@@ -73,7 +80,6 @@ a:hover {
   line-height: 1.33;
   color: #ffffff;
   text-decoration: none;
-  /*text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);*/
   background-image: linear-gradient( to top, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
   border: none;
   border-radius: 2.55em;
@@ -192,6 +198,7 @@ a:hover {
   line-height: 16px;
   background-color: #f8f7f4;
   border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .navigation-user input {
@@ -244,6 +251,25 @@ a:hover {
 /*------------------------------------*\
     #INDEX-CONTENT
 \*------------------------------------*/
+
+/*  #SLIDER --------------------------*/
+
+.slider {
+  text-align: center;
+}
+.slider-item h3 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 61px;
+}
+
+.slider-item .button {
+  padding: 10px 40px;
+  font-size: 32px;
+  line-height: 44px;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+}
+
 
 
 /*------------------------------------*\
