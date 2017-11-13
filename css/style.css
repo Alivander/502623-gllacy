@@ -101,6 +101,40 @@ a:hover {
     #HEADER
 \*------------------------------------*/
 
+.header ul {
+  list-style: none;
+}
+
+.navigation-site {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  list-style: none;
+}
+
+.navigation-site a {
+  padding: 7px 13px;
+  border-radius: 16px;
+}
+
+.navigation-site a:focus,
+.navigation-site a:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #f7f6f3;
+}
+
+.navigation-site a:active {
+  background-color: #ededed;
+  box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
+}
+
+.navigation-site-current {
+  text-decoration: none;
+  background-color: #d07058;
+}
+
+
 
 /*------------------------------------*\
     #INDEX-CONTENT
