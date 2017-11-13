@@ -180,7 +180,8 @@ a:hover {
 }
 
 .navigation-user-link:focus,
-.navigation-user-link:hover {
+.navigation-user-link:hover,
+.navigation-user-link[data-amount] {
   color: #323232;
   background-color: #ffffff;
 }
@@ -202,6 +203,22 @@ a:hover {
 
 .navigation-user input::placeholder {
   color: #999999;
+}
+
+.navigation-user-cart a {
+  text-decoration: none;
+}
+
+.navigation-user-cart td:nth-last-child(2) {
+  color: #999999;
+}
+
+.navigation-user-cart tr:last-child {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: right;
+  box-shadow: inset 0px 1px 0px 0px #cacac7;
 }
 
 /*------------------------------------*\
