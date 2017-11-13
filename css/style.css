@@ -23,8 +23,8 @@ body {
 \*------------------------------------*/
 
 *,
-*::before,
-*::after {
+::before,
+::after {
   box-sizing: inherit;
 }
 
@@ -33,8 +33,13 @@ img {
 }
 
 a {
-  text-decoration: none;
-  transition-duration: 0.25s;
+  color: inherit;
+  transition-duration: 0.1s;
+}
+
+a:focus,
+a:hover {
+  color: #ffbc9e;
 }
 
 
@@ -60,11 +65,56 @@ a {
   overflow: hidden;
 }
 
+.button {
+  display: inline-block;
+  padding: 0.61em 1.28em;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #ffffff;
+  text-decoration: none;
+  /*text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);*/
+  background-image: linear-gradient( to top, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
+  border: none;
+  border-radius: 2.55em;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  cursor: pointer;
+}
+
+.button:focus,
+.button:hover {
+  color: #ffffff;
+  background-image:
+    linear-gradient( to top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%),
+    linear-gradient( to top, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
+}
+
+.button:active {
+  background-image:
+    linear-gradient( to top, rgba(0, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0.07) 100%),
+    linear-gradient( to top, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
+  box-shadow: inset 0px 2px 2px 0px rgb(148, 39, 24);
+}
 
 
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
 
 
+/*------------------------------------*\
+    #INDEX-CONTENT
+\*------------------------------------*/
 
+
+/*------------------------------------*\
+    #INNER-CONTENT
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+    #FOOTER
+\*------------------------------------*/
 
 
 
