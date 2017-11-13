@@ -297,6 +297,48 @@ a:hover {
   line-height: 41px;
 }
 
+/*  #PRODUCTS -------------------------*/
+
+.products-item {
+  text-decoration: none;
+  text-align: center;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.products-item:focus,
+.products-item:hover {
+  color: inherit;
+}
+
+.products-item:focus article,
+.products-item:hover article {
+  background-color: rgba(248, 247, 244, 0.2);
+}
+
+.products-item:focus .products-item-hover,
+.products-item:hover .products-item-hover {
+  display: block;
+}
+
+.products-item h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: underline;
+}
+
+.products-item-price {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.products-item-price strong {
+  font-size: 45px;
+}
+
 /*------------------------------------*\
     #INNER-CONTENT
 \*------------------------------------*/
