@@ -512,6 +512,44 @@ a:hover {
 }
 
 
+/*  #PAGINATION -----------------------*/
+
+.pagination {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  list-style: none;
+}
+
+.pagination a {
+  display: inline-block;
+  min-width: 25px;
+  min-height: 25px;
+  line-height: 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.pagination a:focus[href],
+.pagination a:hover[href] {
+  color: #ffffff;
+  background-color: rgba(248, 247, 244, 0.2);
+}
+
+.pagination-prev:not([href]),
+.pagination-next:not([href]) {
+  opacity: 0.2;
+}
+
+.pagination-current {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.pagination-current:hover {
+  color: #323232;
+}
 
 /*------------------------------------*\
     #FOOTER
