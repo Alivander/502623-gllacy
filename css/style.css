@@ -451,8 +451,15 @@ a:hover {
     #FOOTER
 \*------------------------------------*/
 
+.footer ul {
+  font-size: 13px;
+  line-height: 19px;
+  list-style: none;
+}
 
-
+.info-link-partners {
+  font-weight: 700;
+}
 
 
 /* Второе из дух вспомогательных css-правил.
