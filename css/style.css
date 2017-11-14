@@ -414,6 +414,34 @@ a:hover {
   border-radius: 14px;
 }
 
+/*  #CONTACTS -------------------------*/
+
+.contacts {
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+  background-color: #ffffff;
+  background-image: url("../img/map.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+.contacts img {
+  /*display: none;*/
+}
+
+.contacts-text {
+  background-color: #ffffff;
+  border-radius: 14px;
+}
+
+.contacts-text b {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 /*------------------------------------*\
     #INNER-CONTENT
 \*------------------------------------*/
