@@ -446,6 +446,72 @@ a:hover {
     #INNER-CONTENT
 \*------------------------------------*/
 
+.inner-content h1 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+/*  #FILTERS --------------------------*/
+
+.filters {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.filters-form fieldset {
+  background-color: rgba(248, 247, 244, 0.2);
+  border: none;
+  border-radius: 18px;
+}
+
+.filters-form legend {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filters-sorting select {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.filters label {
+  cursor: pointer;
+}
+
+.filters-sorting select:focus,
+.filters-sorting select:hover,
+.filters label:focus,
+.filters label:hover {
+  color: #323232;
+}
+
+.filters-form button[type="submit"] {
+  display: inline-block;
+  padding: 9px 30px;
+  font: inherit;
+  color: inherit;
+  background-color: rgba(248, 247, 244, 0.2);
+  border: none;
+  border-radius: 18px;
+  box-shadow: inset 0px 0px 0px 2px #ffffff;
+}
+
+.filters-form button[type="submit"]:focus,
+.filters-form button[type="submit"]:hover {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.filters-form button[type="submit"]:active {
+  background-color: #eaeaea;
+  box-shadow: inset 0px 2px 1px 0px #696969;
+}
+
+
 
 /*------------------------------------*\
     #FOOTER
