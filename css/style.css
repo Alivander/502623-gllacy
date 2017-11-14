@@ -11,7 +11,7 @@ body {
   box-sizing: border-box;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 22px;
   font-family: "Roboto", "Tahoma", sans-serif;
   color: #ffffff;
   background-color: #849d8f;
@@ -47,6 +47,34 @@ a {
 a:focus,
 a:hover {
   color: #ffbc9e;
+}
+
+.index-content input,
+.inner-content input {
+  font-weight: 700;
+  background-color: #ffffff;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+}
+
+.index-content input:focus,
+.inner-content input:focus {
+  background-color: #ffffff;
+  border: 2px solid #2e88e4;
+  border-radius: 5px;
+  outline: none;
+}
+
+.index-content input:hover,
+.inner-content input:hover {
+  background-color: #ffffff;
+  border: 2px solid #9a9a9a;
+}
+
+.index-content input::placeholder,
+.inner-content input::placeholder {
+  font-weight: 400;
+  color: #999999;
 }
 
 
@@ -204,12 +232,6 @@ a:hover {
 .navigation-user input {
   font-size: 14px;
   line-height: 24px;
-  border: 1px solid #d3d3d2;
-  border-radius: 5px;
-}
-
-.navigation-user input::placeholder {
-  color: #999999;
 }
 
 .navigation-user-cart a {
@@ -342,8 +364,6 @@ a:hover {
 /*  #ABOUT-US -------------------------*/
 
 .about-us {
-  font-size: 16px;
-  line-height: 22px;
   color: #323232;
   background-color: #ebdec2;
   background-image: url("../img/background-about-us.jpg");
@@ -360,7 +380,39 @@ a:hover {
   list-style: none;
 }
 
+/*  #BLOG -----------------------------*/
 
+.blog {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+  background-color: #ffffff;
+  background-image: url("../img/background-blog.jpg");
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.blog h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/*  #SUBSCRIBE ------------------------*/
+
+.subscribe {
+  color: #5a5a5a;
+  background-color: #f8f7f4;
+  background-image:
+    linear-gradient( #f8f7f4 0%, #f8f7f4 100%),
+    repeating-linear-gradient( -45deg, #92cdff 0px, #92cdff 5px, #f8f7f4 5px, #f8f7f4 10px, #fe9e90 10px, #fe9e90 15px, #f8f7f4 15px, #f8f7f4 20px);
+  background-clip:
+    content-box,
+    border-box;
+  border: 6px solid transparent;
+  border-radius: 14px;
+}
 
 /*------------------------------------*\
     #INNER-CONTENT
