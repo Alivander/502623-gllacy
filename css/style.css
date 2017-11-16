@@ -154,11 +154,8 @@ a:hover {
 
 .navigation {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-}
-
-.navigation li {
-  position: relative;
 }
 
 .navigation-home {
@@ -178,8 +175,12 @@ a:hover {
   list-style: none;
 }
 
+.navigation-site li {
+  position: relative;
+}
+
 .navigation-site-link {
-  display: inline-block;
+  display: block;
   padding: 7px 14px;
   font-weight: 700;
   font-size: 16px;
@@ -206,37 +207,66 @@ a:hover {
 
 .navigation-submenu {
   position: absolute;
+  top: 35px;
+  left: -7px;
   display: none;
+  min-width: 143px;
+  margin: 0;
+  padding: 5px 0;
   font-size: 14px;
   line-height: 16px;
   color: #323232;
   background-color: #f8f7f4;
+  list-style: none;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
+.navigation-site a:focus + .navigation-submenu,
+.navigation-site li:hover .navigation-submenu {
+  display: block;
+}
+
 .navigation-submenu a {
+  display: block;
+  width: 100%;
+  padding: 7px 20px;
   text-decoration: none;
 }
 
-.navigation-submenu a:focus,
-.navigation-submenu a:hover {
+.navigation-submenu a[href]:focus,
+.navigation-submenu a[href]:hover {
+  color: inherit;
   background-color: #fbded7;
 }
 
-.navigation-submenu a:active {
+.navigation-submenu a[href]:active {
   background-color: #f6b5a5;
   box-shadow: none;
 }
 
-.navigation-submenu-current {
+.navigation-submenu-current,
+.navigation-submenu-current:hover {
   color: #ffffff;
   background-color: #d07058;
 }
 
 .navigation-important {
+  position: relative;
+  margin-bottom: 9px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   font-weight: 700;
-  border-bottom: 1px solid rgba(53, 53, 53, 0.2);
+}
+
+.navigation-important::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  bottom: 0;
+  right: 7px;
+  height: 1px;
+  background-color: rgba(53, 53, 53, 0.2);
 }
 
 /*  #NAVIGATION-USER  ----------------*/
