@@ -86,7 +86,16 @@ a:hover {
   max-width: 1200px;
   min-width: 900px;
   margin: 0 auto;
-  padding: 0 2.3%;
+}
+
+.wrapper {
+  margin: 0 2.3%;
+}
+
+.wrapper-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .visually-hidden {
@@ -141,6 +150,10 @@ a:hover {
 
 /*  #NAVIGATION-SITE  ----------------*/
 
+.navigation li {
+  position: relative;
+}
+
 .navigation-site-link {
   display: inline-block;
   padding: 7px 13px;
@@ -168,6 +181,8 @@ a:hover {
 }
 
 .navigation-submenu {
+  position: absolute;
+  display: none;
   font-size: 14px;
   line-height: 16px;
   color: #323232;
@@ -221,6 +236,8 @@ a:hover {
 }
 
 .navigation-user form {
+  position: absolute;
+  display: none;
   color: #323232;
   font-size: 13px;
   line-height: 16px;
@@ -248,6 +265,7 @@ a:hover {
   line-height: 18px;
   text-align: right;
   box-shadow: inset 0px 1px 0px 0px #cacac7;
+
 }
 
 .breadcrumbs {
@@ -442,6 +460,12 @@ a:hover {
   line-height: 24px;
 }
 
+/*  #MODAL  --------------------------*/
+
+.modal {
+  display: none;
+}
+
 /*------------------------------------*\
     #INNER-CONTENT
 \*------------------------------------*/
@@ -568,6 +592,6 @@ a:hover {
 
 /* Второе из дух вспомогательных css-правил.
    Будет удалено из итогового проекта. */
-   *, ::before, ::after {
+   /**, ::before, ::after {
      outline: none;
-   }
+   }*/
