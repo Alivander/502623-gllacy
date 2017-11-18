@@ -663,9 +663,31 @@ a:hover {
 /*  #ACTIONS --------------------------*/
 
 .actions {
+  margin-bottom: 40px;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
+}
+
+.actions-item {
+  padding: 18px 20px 23px 18px;
+  border-radius: 14px;
+}
+
+.actions-item h3 {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.actions-item p {
+  margin: 0;
+  margin-bottom: 43px;
+}
+
+.actions-item .button {
+  float: right;
 }
 
 .actions .berry {
@@ -676,15 +698,6 @@ a:hover {
 .actions .chocolate {
   background-color: #362016;
   background-image: url("../img/background-chocolate.jpg");
-}
-
-.actions-item {
-  border-radius: 14px;
-}
-
-.actions-item h3 {
-  font-size: 35px;
-  line-height: 41px;
 }
 
 /*  #PRODUCTS -------------------------*/
