@@ -874,8 +874,9 @@ a:hover {
 /*  #BLOG -----------------------------*/
 
 .blog {
-  min-height: 220px;
   align-self: stretch;
+  min-height: 220px;
+  margin-bottom: 25px;
   padding: 22px 20px;
   font-weight: 700;
   font-size: 24px;
@@ -908,16 +909,43 @@ a:hover {
 /*  #SUBSCRIBE ------------------------*/
 
 .subscribe {
+  align-self: stretch;
+  min-height: 220px;
+  margin-bottom: 25px;
+  padding: 26px 20px;
   color: #5a5a5a;
   background-color: #f8f7f4;
   background-image:
     linear-gradient( #f8f7f4 0%, #f8f7f4 100%),
     repeating-linear-gradient( -45deg, #92cdff 0px, #92cdff 5px, #f8f7f4 5px, #f8f7f4 10px, #fe9e90 10px, #fe9e90 15px, #f8f7f4 15px, #f8f7f4 20px);
   background-clip:
-    content-box,
+    padding-box,
     border-box;
   border: 6px solid transparent;
   border-radius: 14px;
+}
+
+.subscribe p {
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.subscribe input {
+  flex-grow: 1;
+  margin-right: 11px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.subscribe .button {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 /*  #CONTACTS -------------------------*/
