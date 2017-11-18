@@ -1,8 +1,8 @@
 /* Первое из дух вспомогательных css-правил.
    Будет удалено из итогового проекта. */
-*, ::before, ::after {
+/**, ::before, ::after {
   outline: 1px dashed grey;
-}
+}*/
 
 html,
 body {
@@ -1118,19 +1118,129 @@ a:hover {
     #FOOTER
 \*------------------------------------*/
 
+.footer .wrapper {
+  min-height: 103px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .footer ul {
   font-size: 13px;
   line-height: 19px;
   list-style: none;
 }
 
+/*  #SOCIAL ---------------------------*/
+
+.social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.social-link {
+  display: block;
+  width: 37px;
+  height: 37px;
+  margin-right: 13px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.social-link:focus,
+.social-link:hover,
+.social-link:active {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.social-link::before {
+  display: block;
+  width: 31px;
+  height: 31px;
+  opacity: 0.8;
+}
+
+.social-link:focus::before,
+.social-link:hover::before {
+  opacity: 1;
+}
+
+.social-link:active::before {
+  opacity: 0.7;
+}
+
+.social-link-tw::before {
+  content: url("../img/tw.svg");
+}
+
+.social-link-ins::before {
+  content: url("../img/ins.svg");
+}
+
+.social-link-fb::before {
+  content: url("../img/fb.svg");
+}
+
+.social-link-vk::before {
+  content: url("../img/vk.svg");
+}
+
+/*  #INFO -----------------------------*/
+
+.info {
+  margin: 0;
+  padding: 0;
+}
+
+.info-left {
+  margin-left: auto;
+  margin-right: 32px;
+}
+
+.info-right {
+  margin-right: auto;
+}
+
+.info-link {
+  display: block;
+}
+
 .info-link-partners {
+  position: relative;
   font-weight: 700;
+}
+
+.info-link-partners::before {
+  content: url("../img/heart.svg");
+  position: absolute;
+  top: 2px;
+  left: -22px;
+  width: 15px;
+  height: 13px;
+}
+
+/*  #COPYRIGHT ------------------------*/
+
+.copyright {
+  margin-left: 7px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.copyright img {
+  display: block;
+  margin: -7px 0 5px 2px;
+  width: 108px;
+  height: 39px;
+}
+
+.copyright p {
+  margin: 0;
 }
 
 
 /* Второе из дух вспомогательных css-правил.
    Будет удалено из итогового проекта. */
-   *, ::before, ::after {
+   /**, ::before, ::after {
      outline: none;
-   }
+   }*/
