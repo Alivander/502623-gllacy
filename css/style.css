@@ -102,6 +102,14 @@ a:hover {
   align-content: center;
 }
 
+.column-1-of-2 {
+  width: 48.85%;
+}
+
+.column-1-of-4 {
+  width: 23.35%;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -576,6 +584,8 @@ a:hover {
 
 .slider {
   position: relative;
+  margin-bottom: 40px;
+  padding-top: 265px;
   text-align: center;
 }
 
@@ -587,7 +597,7 @@ a:hover {
 }
 
 .slider-controls label {
-  margin-right: 8px;
+  margin-right: 9px;
   width: 20px;
   height: 20px;
   border: 2px solid #ffffff;
@@ -616,6 +626,8 @@ a:hover {
 }
 
 .slider-item h3 {
+  margin: 0 auto 28px;
+  max-width: 670px;
   font-weight: 700;
   font-size: 60px;
   line-height: 61px;
