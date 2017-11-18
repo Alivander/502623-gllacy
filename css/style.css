@@ -41,7 +41,6 @@ img {
 
 a {
   color: inherit;
-  transition-duration: 0.1s;
 }
 
 a:focus,
@@ -150,8 +149,6 @@ a:hover {
   padding: 9px 0;
 }
 
-/*  #NAVIGATION-SITE  ----------------*/
-
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -168,6 +165,17 @@ a:hover {
   height: 64px;
 }
 
+.navigation-home-link[href]:focus img,
+.navigation-home-link[href]:hover img {
+  opacity: 0.8;
+}
+
+.navigation-home-link[href]:active img {
+  opacity: 0.5;
+}
+
+/*  #NAVIGATION-SITE  ----------------*/
+
 .navigation-site {
   display: flex;
   margin: 0;
@@ -175,8 +183,9 @@ a:hover {
   list-style: none;
 }
 
-.navigation-site li {
+.navigation-site > li {
   position: relative;
+  padding: 5px 0;
 }
 
 .navigation-site-link {
@@ -207,7 +216,7 @@ a:hover {
 
 .navigation-submenu {
   position: absolute;
-  top: 35px;
+  top: 40px;
   left: -7px;
   display: none;
   min-width: 143px;
@@ -273,28 +282,107 @@ a:hover {
 
 .navigation-user {
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.navigation-user-link {
+.navigation-user-item {
+  margin-left: 10px;
+}
+
+.navigation-user-item a {
   display: inline-block;
-  padding: 8px;
+  min-height: 32px;
+  padding: 6px 16px;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+  vertical-align: middle;
   text-decoration: none;
   background-color: rgba(248, 247, 244, 0.2);
   border-radius: 16px;
 }
 
-.navigation-user-link:focus,
-.navigation-user-link:hover,
-.navigation-user-link[data-amount] {
+.navigation-user-item a:focus,
+.navigation-user-item a:hover,
+.navigation-user-item a[data-amount] {
   color: #323232;
   background-color: #ffffff;
 }
+
+.navigation-user-item a::before {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navigation-user-item .navigation-user-search {
+  padding: 6px 7.5px;
+}
+
+.navigation-user-search::before {
+  content: url("../img/search.svg");
+  width: 17px;
+  height: 17px;
+}
+
+.navigation-user-search:focus::before,
+.navigation-user-search:hover::before {
+  content: url("../img/search-hover.svg");
+}
+
+.navigation-user-login::before {
+  content: url("../img/login.svg");
+  width: 21px;
+  height: 19px;
+  margin-right: 6px;
+}
+
+.navigation-user-login:focus::before,
+.navigation-user-login:hover::before {
+  content: url("../img/login-hover.svg");
+}
+
+.navigation-user-cart {
+  min-width: 118px;
+}
+
+.navigation-user-cart::before {
+  content: url("../img/cart.svg");
+  width: 21px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.navigation-user-cart[data-amount]::before {
+  content: url("../img/cart-active.svg");
+  width: 21px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.navigation-user-cart:not([data-amount]):focus::before,
+.navigation-user-cart:not([data-amount]):hover::before {
+  content: url("../img/cart-hover.svg");
+}
+
+/*.navigation-user-cart a {
+  text-decoration: none;
+}
+
+.navigation-user-cart td:nth-last-child(2) {
+  color: #999999;
+}
+
+.navigation-user-cart tr:last-child {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: right;
+  box-shadow: inset 0px 1px 0px 0px #cacac7;
+
+}*/
 
 .navigation-user form {
   position: absolute;
@@ -310,23 +398,6 @@ a:hover {
 .navigation-user input {
   font-size: 14px;
   line-height: 24px;
-}
-
-.navigation-user-cart a {
-  text-decoration: none;
-}
-
-.navigation-user-cart td:nth-last-child(2) {
-  color: #999999;
-}
-
-.navigation-user-cart tr:last-child {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 18px;
-  text-align: right;
-  box-shadow: inset 0px 1px 0px 0px #cacac7;
-
 }
 
 .breadcrumbs {
@@ -653,6 +724,6 @@ a:hover {
 
 /* Второе из дух вспомогательных css-правил.
    Будет удалено из итогового проекта. */
-   /**, ::before, ::after {
+   *, ::before, ::after {
      outline: none;
-   }*/
+   }
