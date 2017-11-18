@@ -874,20 +874,35 @@ a:hover {
 /*  #BLOG -----------------------------*/
 
 .blog {
+  min-height: 220px;
+  align-self: stretch;
+  padding: 22px 20px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: #323232;
   background-color: #ffffff;
   background-image: url("../img/background-blog.jpg");
-  background-position: right center;
+  background-position: right -30px top -38px;
   background-repeat: no-repeat;
+  border-radius: 14px;
 }
 
 .blog h2 {
+  margin: 0;
+  margin-bottom: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
+}
+
+.blog p {
+  max-width: 300px;
+  margin: 0;
+}
+
+.blog a {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 /*  #SUBSCRIBE ------------------------*/
