@@ -378,10 +378,11 @@ a:hover {
   content: url("../img/cart-hover.svg");
 }
 
-/*  #NAVIGATION-FORM  ----------------*/
+/*  #HEADER-FORM  ----------------*/
 
 .navigation-user form {
   position: absolute;
+  right: 0;
   top: 100%;
   display: none;
   padding: 20px 15px;
@@ -404,7 +405,6 @@ a:hover {
 }
 
 .form-search {
-  right: 0;
   width: 340px;
 }
 
@@ -426,7 +426,7 @@ a:hover {
   margin: 0;
 }
 
-.form-login button {
+.form-login .button {
   border-radius: 16px/22px;
 }
 
@@ -436,24 +436,110 @@ a:hover {
   line-height: 20px;
 }
 
+.form-cart {
+  width: 540px;
+}
 
+.form-cart table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
-/*.navigation-user-cart a {
+.form-cart td:not(:only-child) {
+  vertical-align: top;
+  padding-bottom: 15px;
+}
+
+.form-cart td:nth-child(1):not(:only-child) {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.form-cart td:not(:nth-child(2)):not(:only-child) {
+  padding-top: 9px;
+}
+
+.form-cart td:nth-child(3) {
+  padding-left: 7px;
+}
+
+.form-cart td:nth-child(4) {
+  text-align: right;
+}
+
+.form-cart td:nth-child(5) {
+  min-width: 57px;
+  color: #999999;
+  padding-right: 5px;
+}
+
+.form-cart td:nth-child(6) {
+  padding-right: 13px;
+  padding-left: 13px;
+  text-align: center;
+}
+
+.form-cart-remove {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.form-cart-remove::before,
+.form-cart-remove::after {
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.form-cart-remove::before {
+  top: 7px;
+  left: 0;
+  width: 15px;
+  height: 1px;
+}
+
+.form-cart-remove::after {
+  top: 0;
+  left: 7px;
+  width: 1px;
+  height: 15px;
+}
+
+.form-cart img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+
+.form-cart a {
+  display: inline-block;
+  width: 220px;
   text-decoration: none;
 }
 
-.navigation-user-cart td:nth-last-child(2) {
-  color: #999999;
-}
-
-.navigation-user-cart tr:last-child {
+.form-cart-sum {
+  padding: 15px 0;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
   text-align: right;
-  box-shadow: inset 0px 1px 0px 0px #cacac7;
+  border-top: 1px solid #cacac7;
+}
 
-}*/
+.form-cart .button {
+  padding-right: 14px;
+  padding-left: 14px;
+  float: right;
+  letter-spacing: -0.3px;
+  border-radius: 16px/22px;
+}
+
+/*  #BREADCRUMBS  --------------------*/
 
 .breadcrumbs {
   font-size: 14px;
