@@ -23,7 +23,7 @@
         </div>
 
         <ul class="navigation-site">
-          <li>
+          <li class="navigation-site-item">
             <a class="navigation-site-link" href="#">Каталог</a>
             <ul class="navigation-submenu">
               <li>
@@ -43,10 +43,10 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="navigation-site-item">
             <a class="navigation-site-link" href="#">Доставка и оплата</a>
           </li>
-          <li>
+          <li class="navigation-site-item">
             <a class="navigation-site-link" href="#">О Компании</a>
           </li>
         </ul>
@@ -58,7 +58,7 @@
           <a class="navigation-user-search" href="#">
             <span class="visually-hidden">Поиск по сайту</span>
           </a>
-          <form action="https://echo.htmlacademy.ru" method="get">
+          <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
             <label>
               <span class="visually-hidden">Введите запрос для поиска: </span>
               <input type="search" name="search" placeholder="Что ищем?">
@@ -67,7 +67,7 @@
         </li>
         <li class="navigation-user-item">
           <a class="navigation-user-login" href="#">Вход</a>
-          <form action="https://echo.htmlacademy.ru" method="post">
+          <form class="form-login" action="https://echo.htmlacademy.ru" method="post">
             <label>
               <span class="visually-hidden">Электронная почта: </span>
               <input type="email" name="email" placeholder="Электронная почта">
@@ -76,26 +76,19 @@
               <span class="visually-hidden">Пароль: </span>
               <input type="password" name="password" placeholder="Пароль">
             </label>
-            <button class="button" type="submit">Войти</button>
-            <p>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
-            </p>
+            <div class="wrapper wrapper-flex">
+              <button class="button" type="submit">Войти</button>
+              <p>
+                <a href="#">Забыли пароль?</a><br>
+                <a href="#">Новая регистрация</a>
+              </p>
+            </div>
           </form>
         </li>
         <li class="navigation-user-item">
           <a class="navigation-user-cart" href="#">
             <span class="visually-hidden">Ваша корзина: </span>Пусто
           </a>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <table>
-              <caption class="visually-hidden">Вы выбрали:</caption>
-              <tr>
-                <td>Итого: 0 руб.</td>
-              </tr>
-            </table>
-            <button class="button" type="submit" disabled>Оформить заказ</button>
-          </form>
         </li>
       </ul>
 
