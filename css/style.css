@@ -34,11 +34,13 @@ img {
 
 a {
   color: inherit;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
 }
 
 a:focus,
 a:hover {
   color: #ffbc9e;
+  text-decoration-color: rgba(249, 172, 159, 0.3);
 }
 
 .header input,
@@ -104,10 +106,6 @@ a:hover {
 
 .column-1-of-2 {
   width: 48.85%;
-}
-
-.column-1-of-4 {
-  width: 23.35%;
 }
 
 .visually-hidden {
@@ -437,6 +435,10 @@ a:hover {
   line-height: 20px;
 }
 
+.form-login a {
+  text-decoration-color: rgba(0, 0, 0, 0.3);
+}
+
 .form-cart {
   width: 540px;
 }
@@ -663,7 +665,7 @@ a:hover {
 /*  #ACTIONS --------------------------*/
 
 .actions {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
@@ -702,36 +704,49 @@ a:hover {
 
 /*  #PRODUCTS -------------------------*/
 
+.products {
+  margin-bottom: 5px;
+}
+
+.products.wrapper-flex {
+  padding: 0 1.2%;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
 .products-item {
+  position: relative;
+  width: 25%;
+  margin-bottom: 23px;
+  padding: 8px 1.1% 0;
   text-decoration: none;
   text-align: center;
-  border-radius: 50px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   overflow: hidden;
 }
 
 .products-item:focus,
 .products-item:hover {
   color: inherit;
-}
-
-.products-item:focus article,
-.products-item:hover article {
   background-color: rgba(248, 247, 244, 0.2);
 }
 
-.products-item:focus .products-item-hover,
-.products-item:hover .products-item-hover {
-  display: block;
-}
-
-.products-item h3 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  text-decoration: underline;
+.products-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
 }
 
 .products-item-price {
+  position: relative;
+}
+
+.products-item-price p {
+  position: absolute;
+  bottom: 14px;
+  left: 0;
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 45px;
@@ -740,6 +755,54 @@ a:hover {
 
 .products-item-price strong {
   font-size: 45px;
+}
+
+.products-item-price strong::after {
+  content: url("../img/ruble.svg");
+  display: inline-block;
+  margin-right: 2px;
+  margin-left: 3px;
+  vertical-align: bottom;
+}
+
+.products-item-best .products-item-price::before {
+  content: url("../img/best.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 61px;
+  height: 61px;
+}
+
+.products-item h3 {
+  margin: 9px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
+}
+
+.products-item-hover {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  padding-bottom: 7.6%;
+  background-color: rgba(248, 247, 244, 0.2);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.products-item:focus,
+.products-item:hover {
+  display: block;
+  overflow: visible;
+}
+
+.products-item .button {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 /*  #ABOUT-US -------------------------*/
@@ -752,6 +815,7 @@ a:hover {
 }
 
 .about-us h1 {
+  margin: 0;s
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
