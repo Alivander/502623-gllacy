@@ -808,14 +808,60 @@ a:hover {
 /*  #ABOUT-US -------------------------*/
 
 .about-us {
+  margin-bottom: 40px;
+  padding: 25px 20px 12px;
   color: #323232;
+  letter-spacing: 0.1px;
   background-color: #ebdec2;
   background-image: url("../img/background-about-us.jpg");
   border-radius: 14px;
 }
 
+.about-us-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-us-list.wrapper-flex {
+  align-items: flex-start;
+}
+
+.about-us-list li {
+  position: relative;
+  width: 48.75%;
+  margin-bottom: 12px;
+  padding-top: 12px;
+  padding-left: 55px;
+}
+
+.about-us-list li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 49px;
+  height: 49px;
+}
+
+.about-us-icecream::before {
+  content: url("../img/icecream.svg");
+}
+
+.about-us-farm::before {
+  content: url("../img/farm.svg");
+}
+
+.about-us-ecology::before {
+  content: url("../img/ecology.svg");
+}
+
+.about-us-thermopack::before {
+  content: url("../img/thermopack.svg");
+}
+
 .about-us h1 {
-  margin: 0;s
+  margin: 0;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
