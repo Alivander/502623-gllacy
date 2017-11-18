@@ -876,7 +876,7 @@ a:hover {
 .blog {
   align-self: stretch;
   min-height: 220px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   padding: 22px 20px;
   font-weight: 700;
   font-size: 24px;
@@ -911,7 +911,7 @@ a:hover {
 .subscribe {
   align-self: stretch;
   min-height: 220px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   padding: 26px 20px;
   color: #5a5a5a;
   background-color: #f8f7f4;
@@ -951,6 +951,7 @@ a:hover {
 /*  #CONTACTS -------------------------*/
 
 .contacts {
+  min-height: 430px;
   font-size: 14px;
   line-height: 20px;
   color: #323232;
@@ -960,20 +961,42 @@ a:hover {
   background-size: cover;
 }
 
-.contacts img {
-  /*display: none;*/
+.contacts .container {
+  position: relative;
+}
+
+.contacts-map {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
 }
 
 .contacts-text {
+  position: absolute;
+  top: 60px;
+  right: 2.3%;
+  width: 300px;
+  padding: 30px 25px;
   background-color: #ffffff;
   border-radius: 14px;
 }
 
+.contacts-text p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
 .contacts-text b {
   display: block;
+  margin: 2px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+}
+
+.contacts-text .button {
+  width: 100%;
+  margin: 2px 0;
+  text-align: center;
 }
 
 /*  #MODAL  --------------------------*/
