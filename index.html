@@ -348,22 +348,30 @@
 
     </footer>
 
-    <section class="modal modal-message">
-      <h2 class="visually-hidden">Написать нам</h2>
-      <b>Мы обязательно вам ответим!</b>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <label class="visually-hidden" for="message-name">Представьтесь: </label>
-        <input type="text" name="name" id="message-name" placeholder="Как вас зовут?">
-        <label class="visually-hidden" for="message-email">Электронная почта для ответа: </label>
-        <input type="email" name="email" value="" id="message-email" placeholder="Ваша почта для ответа?">
-        <p class="visually-hidden">Введите текст вашего сообщения:</p>
-        <textarea>Напишите что-нибудь...</textarea>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-      <button class="modal-close" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-    </section>
+    <div class="modal modal-background">
+
+      <section class="modal-message">
+
+        <h2 class="visually-hidden">Написать нам</h2>
+        <b>Мы обязательно вам ответим!</b>
+
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="message-name">Представьтесь: </label>
+          <input type="text" name="name" id="message-name" placeholder="Как вас зовут?">
+          <label class="visually-hidden" for="message-email">Электронная почта для ответа: </label>
+          <input type="email" name="email" value="" id="message-email" placeholder="Ваша почта для ответа?">
+          <p class="visually-hidden">Введите текст вашего сообщения:</p>
+          <textarea>Напишите что-нибудь...</textarea>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+
+        <button class="modal-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+
+      </section>
+
+    </div>
 
     <!--Вспомогательный скрипт для LiveReload,
         будет удален из итогового файла-->

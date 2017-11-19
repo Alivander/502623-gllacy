@@ -46,7 +46,8 @@ a:hover {
 .header input,
 .index-content input,
 .inner-content input,
-.modal input {
+.modal input,
+.modal textarea {
   padding: 10px 15px;
   font-weight: 700;
   background-color: #ffffff;
@@ -58,7 +59,8 @@ a:hover {
 .header input:hover,
 .index-content input:hover,
 .inner-content input:hover,
-.modal input:hover {
+.modal input:hover,
+.modal textarea:hover {
   background-color: #ffffff;
   box-shadow: inset 0px 0px 0px 2px #9a9a9a;
 }
@@ -66,7 +68,8 @@ a:hover {
 .header input:focus,
 .index-content input:focus,
 .inner-content input:focus,
-.modal input:focus {
+.modal input:focus
+.modal textarea:focus {
   background-color: #ffffff;
   box-shadow: inset 0px 0px 0px 2px #2e88e4;
   border-radius: 5px;
@@ -76,7 +79,8 @@ a:hover {
 .header input::placeholder,
 .index-content input::placeholder,
 .inner-content input::placeholder,
-.modal input::placeholder {
+.modal input::placeholder,
+.modal textarea {
   font-weight: 400;
   color: #999999;
 }
@@ -811,7 +815,7 @@ a:hover {
   margin-bottom: 40px;
   padding: 25px 20px 12px;
   color: #323232;
-  letter-spacing: 0.1px;
+
   background-color: #ebdec2;
   background-image: url("../img/background-about-us.jpg");
   border-radius: 14px;
@@ -829,10 +833,10 @@ a:hover {
 
 .about-us-list li {
   position: relative;
-  width: 48.75%;
+  width: 48.7%;
   margin-bottom: 12px;
   padding-top: 12px;
-  padding-left: 55px;
+  padding-left: 56px;
 }
 
 .about-us-list li::before {
@@ -865,6 +869,7 @@ a:hover {
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
+  letter-spacing: 0.12px;
 }
 
 .about-us-list {
@@ -1001,8 +1006,94 @@ a:hover {
 
 /*  #MODAL  --------------------------*/
 
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .modal {
   display: none;
+}
+
+.modal-message {
+  position: relative;
+  width: 477px;
+  padding: 16px 24px 24px;
+  color: #323232;
+  background-color: #f8f7f4;
+  border-radius: 10px;
+}
+
+.modal-message b {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.modal-message form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.modal-message input {
+  width: 267px;
+  margin-bottom: 20px;
+  padding: 13px 15px;
+}
+
+.modal-message textarea {
+  width: 100%;
+  min-height: 155px;
+  margin-bottom: 25px;
+}
+
+.modal-message .button {
+  align-self: flex-end;
+  letter-spacing: -0.3px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 22px;
+  height: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.modal-close::before {
+  top: 10px;
+  left: 0;
+  width: 22px;
+  height: 2px;
+}
+
+.modal-close::after {
+  top: 0;
+  left: 10px;
+  width: 2px;
+  height: 22px;
 }
 
 /*------------------------------------*\
