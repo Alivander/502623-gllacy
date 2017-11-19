@@ -158,11 +158,11 @@
 
     <h1>Сливочное мороженое</h1>
 
-    <section class="filters">
+    <section class="filters wrapper">
       <h2 class="visually-hidden">Фильтры по товарам</h2>
       <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="filters-sorting">
-          <legend>Сортровка:</legend>
+          <legend>Сортировка:</legend>
           <select name="sorting">
             <option value="popular" selected>по популярности</option>
             <option value="min-price">сначала недорогие</option>
@@ -172,11 +172,7 @@
         </fieldset>
         <fieldset class="filters-price" oninput="">
           <legend>
-            Цена
-            <output name="min-price">100</output>
-            руб. -
-            <output name="max-price">500</output>
-            руб.
+            Цена: <output name="min-price">100</output> руб. – <output name="max-price">500</output> руб.
           </legend>
           <div class="filters-price-scale"></div>
           <div class="filters-price-scale-fill"></div>
@@ -184,41 +180,32 @@
             <span class="visually-hidden">Минимальная цена</span>
           </button>
           <button class="filters-price-max">
-            <span class="visually-hidden">Максимальая цена</span>
+            <span class="visually-hidden">Максимальная цена</span>
           </button>
         </fieldset>
-        <fieldset class="fat-content">
+        <fieldset class="filters-fat-content">
           <legend>Жирность</legend>
-          <label>
-            <input class="visually-hidden" type="radio" name="fat-content" value="0"> 0%
-          </label>
-          <label>
-            <input class="visually-hidden" type="radio" name="fat-content" value="0-10" checked> 10%
-          </label>
-          <label>
-            <input class="visually-hidden" type="radio" name="fat-content" value="0-30"> 30%
-          </label>
-          <label>
-            <input class="visually-hidden" type="radio" name="fat-content" value="30-100"> выше 30%
-          </label>
+          <input type="radio" name="fat-content" value="0" id="fat-content-0">
+          <label for="fat-content-0">0%</label>
+          <input type="radio" name="fat-content" value="0-10" id="fat-content-10" checked>
+          <label for="fat-content-10">до 10%</label>
+          <input type="radio" name="fat-content" value="0-30" id="fat-content-30">
+          <label for="fat-content-30">до 30%</label>
+          <input type="radio" name="fat-content" value="30-100" id="fat-content-30-100">
+          <label for="fat-content-30-100">выше 30%</label>
         </fieldset>
-        <fieldset class="fillers">
+        <fieldset class="filters-fillers">
           <legend>Наполнители:</legend>
-          <label>
-            <input class="visually-hidden" type="checkbox" name="chokolate" checked> шоколадные
-          </label>
-          <label>
-            <input class="visually-hidden" type="checkbox" name="sugar-powders" checked> сахарные присыпки
-          </label>
-          <label>
-            <input class="visually-hidden" type="checkbox" name="fruit"> фрукты
-          </label>
-          <label>
-            <input class="visually-hidden" type="checkbox" name="syrops"> сиропы
-          </label>
-          <label>
-            <input class="visually-hidden" type="checkbox" name="jams"> джемы
-          </label>
+          <input type="checkbox" name="chokolate" id="fillers-chokolate" checked>
+          <label for="fillers-chokolate">шоколадные</label>
+          <input type="checkbox" name="sugar-powders" id="fillers-powders" checked>
+          <label for="fillers-powders">сахарные присыпки</label>
+          <input type="checkbox" name="fruit" id="fillers-fruit">
+          <label for="fillers-fruit">фрукты</label>
+          <input type="checkbox" name="syrops" id="fillers-syrops">
+          <label for="fillers-syrops">сиропы</label>
+          <input type="checkbox" name="jams" id="fillers-jams">
+          <label for="fillers-jams">джемы</label>
         </fieldset>
         <button type="submit">Применить</button>
       </form>
