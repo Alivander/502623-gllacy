@@ -1349,24 +1349,60 @@ a:hover {
   box-shadow: inset 0px 2px 1px 0px #696969;
 }
 
+/*  #CATALOG --------------------------*/
+
+.inner .products {
+  margin-bottom: 52px;
+}
+
+.inner .products-item {
+  margin-bottom: 19px;
+}
 
 /*  #PAGINATION -----------------------*/
 
 .pagination {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  padding-bottom: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   list-style: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.pagination a {
+.pagination a:not([class$="prev"]):not([class$="next"]) {
   display: inline-block;
   min-width: 25px;
   min-height: 25px;
+  margin: auto 2px;
   line-height: 25px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
+}
+
+.pagination-prev::before,
+.pagination-next::before {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 10px;
+  margin-top: 8px;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+}
+
+.pagination-prev::before {
+  margin-right: 15px;
+  transform: rotate(-45deg);
+}
+
+.pagination-next::before {
+  margin-left: 15px;
+  transform: rotate(135deg);
 }
 
 .pagination a:focus[href],
