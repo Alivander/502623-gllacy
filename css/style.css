@@ -331,6 +331,11 @@ a:hover {
   background-color: #ffffff;
 }
 
+.navigation-user-item > a:active {
+  background-color: #ededed;
+  box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
+}
+
 .navigation-user-item a::before {
   display: inline-block;
   vertical-align: middle;
@@ -341,26 +346,47 @@ a:hover {
 }
 
 .navigation-user-search::before {
-  content: url("../img/search.svg");
+  content: "";
+  display: block;
   width: 17px;
   height: 17px;
+  background-image:
+    url("../img/search.svg"),
+    url("../img/search-hover.svg");
+  background-position: center center;
+  background-size:
+    17px 17px,
+    0px 0px;
+  background-repeat: no-repeat;
 }
 
 .navigation-user-search:focus::before,
 .navigation-user-search:hover::before {
-  content: url("../img/search-hover.svg");
+  background-image: url("../img/search-hover.svg");
+  background-size:
+    17px 17px;
 }
 
 .navigation-user-login::before {
-  content: url("../img/login.svg");
+  content: "";
+  display: block;
   width: 21px;
   height: 19px;
   margin-right: 6px;
+  background-image:
+    url("../img/login.svg"),
+    url("../img/login-hover.svg");
+  background-position: center center;
+  background-size:
+    21px 19px,
+    0px 0px;
+  background-repeat: no-repeat;
 }
 
 .navigation-user-login:focus::before,
 .navigation-user-login:hover::before {
-  content: url("../img/login-hover.svg");
+  background-image: url("../img/login-hover.svg");
+  background-size: 21px 19px;
 }
 
 .navigation-user-cart {
@@ -368,22 +394,34 @@ a:hover {
 }
 
 .navigation-user-cart::before {
-  content: url("../img/cart.svg");
+  content: "";
+  display: block;
   width: 21px;
   height: 20px;
   margin-right: 5px;
+  background-image:
+    url("../img/cart.svg"),
+    url("../img/cart-hover.svg");
+  background-position: center center;
+  background-size:
+    21px 20px,
+    0px 0px;
+  background-repeat: no-repeat;
 }
 
 .navigation-user-cart[data-amount]::before {
-  content: url("../img/cart-active.svg");
+  content: "";
   width: 21px;
   height: 20px;
   margin-right: 5px;
+  background-image: url("../img/cart-active.svg");
+  background-size: 21px 20px;
 }
 
 .navigation-user-cart:not([data-amount]):focus::before,
 .navigation-user-cart:not([data-amount]):hover::before {
-  content: url("../img/cart-hover.svg");
+  background-image: url("../img/cart-hover.svg");
+  background-size: 21px 20px;
 }
 
 /*  #HEADER-FORM  ----------------*/
@@ -447,6 +485,13 @@ a:hover {
 
 .form-login a {
   text-decoration-color: rgba(0, 0, 0, 0.3);
+}
+
+.form-login a:focus,
+.form-login a:hover,
+.form-login a:active {
+  color: #e84d37;
+  text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
 .form-cart {
@@ -535,6 +580,12 @@ a:hover {
   text-decoration: none;
 }
 
+.form-cart a:focus,
+.form-cart a:hover,
+.form-cart a:active {
+  color: #e84d37;
+}
+
 .form-cart-sum {
   padding: 15px 0;
   font-weight: 700;
@@ -553,6 +604,10 @@ a:hover {
 }
 
 /*  #BREADCRUMBS  --------------------*/
+
+.breadcrumbs-wrapper {
+  flex-direction: row-reverse;
+}
 
 .breadcrumbs {
   display: flex;
@@ -920,6 +975,13 @@ a:hover {
 .blog a {
   background-color: rgba(255, 255, 255, 0.8);
   text-decoration-color: #000000;
+}
+
+.blog a:focus,
+.blog a:hover,
+.blog a:active {
+  color: #e84d37;
+  text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
 /*  #SUBSCRIBE ------------------------*/
@@ -1383,30 +1445,30 @@ a:hover {
   display: inline-block;
   min-width: 25px;
   min-height: 25px;
-  margin: auto 2px;
+  margin: auto 1.6px;
   line-height: 25px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
 }
 
-.pagination-prev::before,
-.pagination-next::before {
-  content: "";
+.pagination-prev,
+.pagination-next {
   display: block;
-  width: 9px;
+  width: 10px;
   height: 10px;
   margin-top: 8px;
   border-top: 2px solid #ffffff;
   border-left: 2px solid #ffffff;
 }
 
-.pagination-prev::before {
+.pagination-prev:not([href]),
+.pagination-next:not([href]) {
   margin-right: 15px;
   transform: rotate(-45deg);
 }
 
-.pagination-next::before {
+.pagination-next {
   margin-left: 15px;
   transform: rotate(135deg);
 }
@@ -1417,8 +1479,7 @@ a:hover {
   background-color: rgba(248, 247, 244, 0.2);
 }
 
-.pagination-prev:not([href]),
-.pagination-next:not([href]) {
+.pagination-prev {
   opacity: 0.2;
 }
 
