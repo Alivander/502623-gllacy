@@ -773,13 +773,13 @@ a:hover {
 /*  #PRODUCTS -------------------------*/
 
 .products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
   margin-bottom: 5px;
-}
-
-.products.wrapper-flex {
   padding: 0 1.2%;
-  align-items: flex-start;
-  align-content: flex-start;
 }
 
 .products-item {
@@ -822,11 +822,11 @@ a:hover {
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
-.products-item-price strong {
+.products-item-value {
   font-size: 45px;
 }
 
-.products-item-price strong::after {
+.products-item-value::after {
   content: url("../img/ruble.svg");
   display: inline-block;
   margin-right: 2px;
@@ -934,7 +934,6 @@ a:hover {
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
-  letter-spacing: 0.12px;
 }
 
 .about-us-list {
