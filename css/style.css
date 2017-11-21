@@ -1566,21 +1566,17 @@ a:hover {
 /*  #INFO -----------------------------*/
 
 .info {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 340px;
   margin: 0;
   padding: 0;
 }
 
-.info-left {
-  margin-left: auto;
-  margin-right: 32px;
-}
-
-.info-right {
-  margin-right: auto;
-}
-
-.info-link {
+.info a {
   display: block;
+  min-width: 143px;
+  padding: 1px 0px 1px 13px;
 }
 
 .info-link-partners {
@@ -1591,8 +1587,8 @@ a:hover {
 .info-link-partners::before {
   content: url("../img/heart.svg");
   position: absolute;
-  top: 2px;
-  left: -22px;
+  top: 4px;
+  left: -8px;
   width: 15px;
   height: 13px;
 }
@@ -1600,7 +1596,6 @@ a:hover {
 /*  #COPYRIGHT ------------------------*/
 
 .copyright {
-  margin-left: 7px;
   font-size: 12px;
   line-height: 18px;
 }
