@@ -47,10 +47,7 @@ a:hover {
   text-decoration-color: rgba(249, 172, 159, 0.3);
 }
 
-.header input,
-.index-content input,
-.inner-content input,
-.modal input,
+.input,
 .modal textarea {
   padding: 10px 15px;
   font-weight: 700;
@@ -60,19 +57,13 @@ a:hover {
   border-radius: 5px;
 }
 
-.header input:hover,
-.index-content input:hover,
-.inner-content input:hover,
-.modal input:hover,
+.input:hover,
 .modal textarea:hover {
   background-color: #ffffff;
   box-shadow: inset 0px 0px 0px 2px #9a9a9a;
 }
 
-.header input:focus,
-.index-content input:focus,
-.inner-content input:focus,
-.modal input:focus
+.input:focus,
 .modal textarea:focus {
   background-color: #ffffff;
   box-shadow: inset 0px 0px 0px 2px #2e88e4;
@@ -80,10 +71,7 @@ a:hover {
   outline: none;
 }
 
-.header input::placeholder,
-.index-content input::placeholder,
-.inner-content input::placeholder,
-.modal input::placeholder,
+.input::placeholder,
 .modal textarea {
   font-weight: 400;
   color: #999999;
