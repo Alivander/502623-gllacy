@@ -482,6 +482,10 @@ a:hover {
   text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
+.navigation-user .form-cart {
+  display: block;
+}
+
 .form-cart {
   width: 540px;
 }
@@ -491,41 +495,21 @@ a:hover {
   border-collapse: collapse;
 }
 
-.form-cart td:not(:only-child) {
+.form-cart-remove,
+.form-cart-image,
+.form-cart-link,
+.form-cart-count,
+.form-cart-price,
+.form-cart-sum {
   vertical-align: top;
   padding-bottom: 15px;
 }
 
-.form-cart td:nth-child(1):not(:only-child) {
-  padding-right: 5px;
-  padding-left: 5px;
-}
-
-.form-cart td:not(:nth-child(2)):not(:only-child) {
-  padding-top: 9px;
-}
-
-.form-cart td:nth-child(3) {
-  padding-left: 7px;
-}
-
-.form-cart td:nth-child(4) {
-  text-align: right;
-}
-
-.form-cart td:nth-child(5) {
-  min-width: 57px;
-  color: #999999;
-  padding-right: 5px;
-}
-
-.form-cart td:nth-child(6) {
-  padding-right: 13px;
-  padding-left: 13px;
-  text-align: center;
-}
-
 .form-cart-remove {
+  padding-right: 10px;
+}
+
+.form-cart-remove button {
   position: relative;
   width: 15px;
   height: 15px;
@@ -534,26 +518,54 @@ a:hover {
   cursor: pointer;
 }
 
-.form-cart-remove::before,
-.form-cart-remove::after {
+.form-cart-remove button::before,
+.form-cart-remove button::after {
   content: "";
   position: absolute;
   background-color: #000000;
   transform: rotate(45deg);
 }
 
-.form-cart-remove::before {
+.form-cart-remove button::before {
   top: 7px;
   left: 0;
   width: 15px;
   height: 1px;
 }
 
-.form-cart-remove::after {
+.form-cart-remove button::after {
   top: 0;
   left: 7px;
   width: 1px;
   height: 15px;
+}
+
+.form-cart-remove,
+.form-cart-link,
+.form-cart-count,
+.form-cart-price,
+.form-cart-sum {
+  padding-top: 9px;
+}
+
+.form-cart-link {
+  padding-left: 7px;
+}
+
+.form-cart-count {
+  text-align: right;
+}
+
+.form-cart-price {
+  min-width: 57px;
+  color: #999999;
+  padding-right: 5px;
+}
+
+.form-cart-sum {
+  padding-right: 13px;
+  padding-left: 13px;
+  text-align: center;
 }
 
 .form-cart img {
@@ -574,8 +586,8 @@ a:hover {
   color: #e84d37;
 }
 
-.form-cart-sum {
-  padding: 15px 0;
+.form-cart-final-sum {
+  padding: 14px 0;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
