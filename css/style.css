@@ -832,12 +832,17 @@ a:hover {
 }
 
 .products-item-best .products-item-price::before {
-  content: url("../img/best.svg");
+  content: "Хит!";
   position: absolute;
   top: 0;
   left: 0;
   width: 61px;
   height: 61px;
+  color: transparent;
+  background-image: url("../img/best.svg");
+  background-position: center center;
+  background-size: 61px 61px;
+  background-repeat: no-repeat;
 }
 
 .products-item h3 {
