@@ -164,7 +164,7 @@
 
       <section class="filters wrapper">
         <h2 class="visually-hidden">Фильтры по товарам</h2>
-        <form class="filters-form" action="https://echo.htmlacademy.ru" method="get" name="catalog-filters">
+        <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
 
           <fieldset class="filters-sorting">
             <legend>Сортировка:</legend>
@@ -182,10 +182,10 @@
             </legend>
             <div class="filters-price-scale"></div>
             <div class="filters-price-scale-fill"></div>
-            <button class="filters-price-min">
+            <button class="filters-price-min" type="button">
               <span class="visually-hidden">Минимальная цена</span>
             </button>
-            <button class="filters-price-max">
+            <button class="filters-price-max" type="button">
               <span class="visually-hidden">Максимальная цена</span>
             </button>
           </fieldset>
@@ -215,7 +215,7 @@
             <input type="checkbox" name="jams" id="fillers-jams">
             <label for="fillers-jams">джемы</label>
           </fieldset>
-          
+
           <button type="submit">Применить</button>
         </form>
       </section>
