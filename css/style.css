@@ -1,5 +1,6 @@
 html,
 body {
+  min-width: 900px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -43,24 +44,26 @@ a:hover {
 
 .input,
 .modal textarea {
-  padding: 10px 15px;
+  min-height: 44px;
+  padding: 10px 14px;
   font-weight: 700;
   background-color: #ffffff;
-  box-shadow: inset 0px 0px 0px 1px #d3d3d2;
-  border: none;
+  border: 1px solid #d3d3d2;
   border-radius: 5px;
 }
 
 .input:hover,
 .modal textarea:hover {
+  padding: 9px 13px;
   background-color: #ffffff;
-  box-shadow: inset 0px 0px 0px 2px #9a9a9a;
+  border: 2px solid #9a9a9a;
 }
 
 .input:focus,
 .modal textarea:focus {
+  padding: 9px 13px;
   background-color: #ffffff;
-  box-shadow: inset 0px 0px 0px 2px #2e88e4;
+  border: 2px solid #2e88e4;
   border-radius: 5px;
   outline: none;
 }
@@ -195,7 +198,7 @@ a:hover {
 
 .navigation-site-link {
   display: block;
-  padding: 7px 14px;
+  padding: 6px 15px 8px 13px;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
@@ -437,7 +440,7 @@ a:hover {
 .navigation-user input {
   width: 100%;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.2;
 }
 
 .form-search {
@@ -727,6 +730,7 @@ a:hover {
 /*  #ACTIONS --------------------------*/
 
 .actions {
+  justify-content: flex-start;
   margin-bottom: 32px;
   font-weight: 700;
   font-size: 18px;
@@ -736,26 +740,34 @@ a:hover {
 .actions-item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   width: 48.85%;
   min-height: 229px;
-  padding: 18px 20px 23px 18px;
+  padding: 18px 0 23px;
   border-radius: 14px;
 }
 
+.actions-item:first-of-type {
+  margin-right: auto;
+}
+
 .actions-item h3 {
+  width: 100%;
   margin: 0;
   margin-bottom: 16px;
+  padding: 0 18px;
   font-size: 35px;
   line-height: 41px;
 }
 
 .actions-item p {
+  width: 100%;
+  min-height: 86px;
   margin: 0;
+  padding: 0 18px;
 }
 
 .actions-item .button {
-  margin-top: auto;
+  margin-right: 20px;
   align-self: flex-end;
 }
 
@@ -861,19 +873,36 @@ a:hover {
 
 .products-item-hover {
   position: absolute;
-  top: 100%;
   right: 0;
+  bottom: -65px;
   left: 0;
-  padding-bottom: 7.6%;
+  padding-bottom: 20px;
   background-color: rgba(248, 247, 244, 0.2);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  opacity: 0;
 }
 
 .products-item:focus,
 .products-item:hover {
-  display: block;
   overflow: visible;
+}
+
+.products-item:focus .products-item-hover,
+.products-item:hover .products-item-hover {
+  opacity: 1;
+}
+
+.products-item:focus::after,
+.products-item:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -65px;
+  left: 0;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .products-item .button {
@@ -1013,6 +1042,7 @@ a:hover {
 }
 
 .subscribe p {
+  min-height: 102px;
   margin: 0;
 }
 
@@ -1132,7 +1162,6 @@ a:hover {
 .modal-message input {
   width: 267px;
   margin-bottom: 20px;
-  padding: 13px 15px;
 }
 
 .modal-message textarea {
@@ -1402,7 +1431,8 @@ a:hover {
 
 .filters-form button[type="submit"] {
   display: inline-block;
-  margin: auto 0 15px;
+  align-self: flex-end;
+  margin-bottom: 15px;
   padding: 9px 30px;
   font: inherit;
   color: inherit;
@@ -1507,7 +1537,6 @@ a:hover {
 \*------------------------------------*/
 
 .footer .wrapper {
-  min-height: 103px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -1528,9 +1557,9 @@ a:hover {
 
 .social-link {
   display: block;
-  width: 37px;
-  height: 37px;
-  margin-right: 13px;
+  width: 38px;
+  height: 38px;
+  margin-right: 12px;
   border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
 }
@@ -1543,8 +1572,8 @@ a:hover {
 
 .social-link::before {
   display: block;
-  width: 31px;
-  height: 31px;
+  width: 32px;
+  height: 32px;
   opacity: 0.8;
 }
 
@@ -1586,7 +1615,7 @@ a:hover {
 .info a {
   display: block;
   min-width: 143px;
-  padding: 1px 0px 1px 13px;
+  padding: 0 0px 2px 13px;
 }
 
 .info-link-partners {
@@ -1597,7 +1626,7 @@ a:hover {
 .info-link-partners::before {
   content: url("../img/heart.svg");
   position: absolute;
-  top: 4px;
+  top: 2px;
   left: -8px;
   width: 15px;
   height: 13px;
@@ -1612,11 +1641,12 @@ a:hover {
 
 .copyright img {
   display: block;
-  margin: -7px 0 5px 2px;
+  margin: 0 0 5px 2px;
   width: 108px;
   height: 39px;
 }
 
 .copyright p {
   margin: 0;
+  margin-bottom: 18px;
 }
