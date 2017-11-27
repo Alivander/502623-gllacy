@@ -3,13 +3,17 @@ body {
   min-width: 900px;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   font-family: "Roboto", "Tahoma", sans-serif;
   color: #ffffff;
   background-color: #849d8f;
+  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(transparent));
+  background-image: -webkit-linear-gradient( top, rgba(255, 255, 255, 0.2) 0%, transparent 100%);
+  background-image: -o-linear-gradient( top, rgba(255, 255, 255, 0.2) 0%, transparent 100%);
   background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0.2) 0%, transparent 100%);
   background-position: top left;
   background-size: 100% 656px;
@@ -24,7 +28,8 @@ body {
 *,
 ::before,
 ::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 img {
@@ -33,13 +38,15 @@ img {
 
 a {
   color: inherit;
-  text-decoration-color: rgba(255, 255, 255, 0.3);
+  -webkit-text-decoration-color: rgba(255, 255, 255, 0.3);
+          text-decoration-color: rgba(255, 255, 255, 0.3);
 }
 
 a:focus,
 a:hover {
   color: #ffbc9e;
-  text-decoration-color: rgba(249, 172, 159, 0.3);
+  -webkit-text-decoration-color: rgba(249, 172, 159, 0.3);
+          text-decoration-color: rgba(249, 172, 159, 0.3);
 }
 
 .input,
@@ -68,6 +75,24 @@ a:hover {
   outline: none;
 }
 
+.input::-webkit-input-placeholder,
+.modal textarea::-webkit-input-placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.input:-ms-input-placeholder,
+.modal textarea:-ms-input-placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.input::-ms-input-placeholder,
+.modal textarea::-ms-input-placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
 .input::placeholder,
 .modal textarea::placeholder {
   font-weight: 400;
@@ -90,11 +115,19 @@ a:hover {
 }
 
 .wrapper-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .visually-hidden {
@@ -118,10 +151,14 @@ a:hover {
   text-decoration: none;
   vertical-align: baseline;
   background-color: rgb(231, 74, 53);
+  background-image: -webkit-gradient( linear, left bottom, left top, from(rgb(231, 74, 53)), to(rgb(242, 104, 67)));
+  background-image: -webkit-linear-gradient( bottom, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
+  background-image: -o-linear-gradient( bottom, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
   background-image: linear-gradient( to top, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
   border: none;
   border-radius: 2.55em;
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+          box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   cursor: pointer;
 }
 
@@ -129,15 +166,34 @@ a:hover {
 .button:hover {
   color: #ffffff;
   background-image:
+    -webkit-gradient( linear, left bottom, left top, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))),
+    -webkit-gradient( linear, left bottom, left top, from(rgb(231, 74, 53)), to(rgb(242, 104, 67)));
+  background-image:
+    -webkit-linear-gradient( bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%),
+    -webkit-linear-gradient( bottom, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
+  background-image:
+    -o-linear-gradient( bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%),
+    -o-linear-gradient( bottom, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
+  background-image:
     linear-gradient( to top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%),
     linear-gradient( to top, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
 }
 
 .button:active {
   background-image:
+    -webkit-gradient( linear, left bottom, left top, from(rgba(0, 0, 0, 0.07)), to(rgba(0, 0, 0, 0.07))),
+    -webkit-gradient( linear, left bottom, left top, from(rgb(242, 104, 67)), to(rgb(231, 74, 53)));
+  background-image:
+    -webkit-linear-gradient( bottom, rgba(0, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0.07) 100%),
+    -webkit-linear-gradient( bottom, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
+  background-image:
+    -o-linear-gradient( bottom, rgba(0, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0.07) 100%),
+    -o-linear-gradient( bottom, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
+  background-image:
     linear-gradient( to top, rgba(0, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0.07) 100%),
     linear-gradient( to top, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
-  box-shadow: inset 0px 2px 2px 0px rgb(148, 39, 24);
+  -webkit-box-shadow: inset 0px 2px 2px 0px rgb(148, 39, 24);
+          box-shadow: inset 0px 2px 2px 0px rgb(148, 39, 24);
 }
 
 
@@ -150,15 +206,27 @@ a:hover {
 }
 
 .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navigation-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 2.3%;
 }
 
@@ -184,8 +252,11 @@ a:hover {
 /*  #NAVIGATION-SITE  ----------------*/
 
 .navigation-site {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -214,7 +285,8 @@ a:hover {
 
 .navigation-site-link:active {
   background-color: #ededed;
-  box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
+  -webkit-box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
+          box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
 }
 
 .navigation-site-current {
@@ -237,7 +309,8 @@ a:hover {
   background-color: #f8f7f4;
   list-style: none;
   border-radius: 5px;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .navigation-site-item:hover .navigation-submenu {
@@ -259,7 +332,8 @@ a:hover {
 
 .navigation-submenu a[href]:active {
   background-color: #f6b5a5;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .navigation-submenu-current,
@@ -289,9 +363,14 @@ a:hover {
 /*  #NAVIGATION-USER  ----------------*/
 
 .navigation-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-shrink: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   margin: 0 0 5px;
   padding: 0;
   list-style: none;
@@ -325,7 +404,8 @@ a:hover {
 
 .navigation-user-item > a:active {
   background-color: #ededed;
-  box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
+  -webkit-box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
+          box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
 }
 
 .navigation-user-item a::before {
@@ -430,7 +510,8 @@ a:hover {
   line-height: 16px;
   background-color: #f8f7f4;
   border-radius: 5px;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .navigation-user-item:hover form {
@@ -476,14 +557,16 @@ a:hover {
 }
 
 .form-login a {
-  text-decoration-color: rgba(0, 0, 0, 0.3);
+  -webkit-text-decoration-color: rgba(0, 0, 0, 0.3);
+          text-decoration-color: rgba(0, 0, 0, 0.3);
 }
 
 .form-login a:focus,
 .form-login a:hover,
 .form-login a:active {
   color: #e84d37;
-  text-decoration-color: rgba(232, 77, 55, 0.3);
+  -webkit-text-decoration-color: rgba(232, 77, 55, 0.3);
+          text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
 .form-cart {
@@ -523,7 +606,9 @@ a:hover {
   content: "";
   position: absolute;
   background-color: #000000;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .form-cart-remove button::before {
@@ -607,10 +692,15 @@ a:hover {
 /*  #BREADCRUMBS  --------------------*/
 
 .breadcrumbs-wrapper {
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: auto 0 3px;
   padding: 0;
@@ -657,6 +747,8 @@ a:hover {
 }
 
 .slider-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   bottom: 22px;
@@ -730,7 +822,9 @@ a:hover {
 /*  #ACTIONS --------------------------*/
 
 .actions {
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-bottom: 32px;
   font-weight: 700;
   font-size: 18px;
@@ -738,8 +832,13 @@ a:hover {
 }
 
 .actions-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 48.85%;
   min-height: 229px;
   padding: 18px 0 23px;
@@ -768,7 +867,8 @@ a:hover {
 
 .actions-item .button {
   margin-right: 20px;
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .actions .berry {
@@ -784,10 +884,16 @@ a:hover {
 /*  #PRODUCTS -------------------------*/
 
 .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  align-content: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
   margin-bottom: 5px;
   padding: 0 1.2%;
 }
@@ -843,7 +949,8 @@ a:hover {
   margin-right: 2px;
   margin-left: 3px;
   vertical-align: bottom;
-  filter: drop-shadow(0px 1px 3px rgba(49, 50, 53, 0.5));
+  -webkit-filter: drop-shadow(0px 1px 3px rgba(49, 50, 53, 0.5));
+          filter: drop-shadow(0px 1px 3px rgba(49, 50, 53, 0.5));
 }
 
 .products-item-best .products-item-price::before {
@@ -868,7 +975,8 @@ a:hover {
   font-size: 16px;
   line-height: 22px;
   text-decoration: underline;
-  text-decoration-color: rgba(255, 255, 255, 0.3);
+  -webkit-text-decoration-color: rgba(255, 255, 255, 0.3);
+          text-decoration-color: rgba(255, 255, 255, 0.3);
 }
 
 .products-item-hover {
@@ -902,7 +1010,8 @@ a:hover {
   bottom: -65px;
   left: 0;
   border-radius: 5px;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .products-item .button {
@@ -929,7 +1038,9 @@ a:hover {
 }
 
 .about-us-list.wrapper-flex {
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .about-us-list li {
@@ -979,7 +1090,8 @@ a:hover {
 /*  #BLOG -----------------------------*/
 
 .blog {
-  align-self: stretch;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
   width: 48.85%;
   min-height: 220px;
   margin-bottom: 40px;
@@ -1010,27 +1122,43 @@ a:hover {
 
 .blog a {
   background-color: rgba(255, 255, 255, 0.8);
-  text-decoration-color: #000000;
+  -webkit-text-decoration-color: #000000;
+          text-decoration-color: #000000;
 }
 
 .blog a:focus,
 .blog a:hover,
 .blog a:active {
   color: #e84d37;
-  text-decoration-color: rgba(232, 77, 55, 0.3);
+  -webkit-text-decoration-color: rgba(232, 77, 55, 0.3);
+          text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
 /*  #SUBSCRIBE ------------------------*/
 
 .subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 48.85%;
   min-height: 220px;
   margin-bottom: 40px;
   padding: 26px 20px;
   color: #5a5a5a;
   background-color: #f8f7f4;
+  background-image:
+    -webkit-gradient( linear, left top, left bottom, from(#f8f7f4), to(#f8f7f4)),
+    repeating-linear-gradient( -45deg, #92cdff 0px, #92cdff 5px, #f8f7f4 5px, #f8f7f4 10px, #fe9e90 10px, #fe9e90 15px, #f8f7f4 15px, #f8f7f4 20px);
+  background-image:
+    -webkit-linear-gradient( #f8f7f4 0%, #f8f7f4 100%),
+    -webkit-repeating-linear-gradient( 135deg, #92cdff 0px, #92cdff 5px, #f8f7f4 5px, #f8f7f4 10px, #fe9e90 10px, #fe9e90 15px, #f8f7f4 15px, #f8f7f4 20px);
+  background-image:
+    -o-linear-gradient( #f8f7f4 0%, #f8f7f4 100%),
+    -o-repeating-linear-gradient( 135deg, #92cdff 0px, #92cdff 5px, #f8f7f4 5px, #f8f7f4 10px, #fe9e90 10px, #fe9e90 15px, #f8f7f4 15px, #f8f7f4 20px);
   background-image:
     linear-gradient( #f8f7f4 0%, #f8f7f4 100%),
     repeating-linear-gradient( -45deg, #92cdff 0px, #92cdff 5px, #f8f7f4 5px, #f8f7f4 10px, #fe9e90 10px, #fe9e90 15px, #f8f7f4 15px, #f8f7f4 20px);
@@ -1047,19 +1175,26 @@ a:hover {
 }
 
 .subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: auto 0 8px;
 }
 
 .subscribe-form input {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   width: 60%;
   margin-right: 11px;
 }
 
 .subscribe-form .button {
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -1121,9 +1256,15 @@ a:hover {
   position: fixed;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
@@ -1151,9 +1292,16 @@ a:hover {
 }
 
 .modal-message form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
 }
 
@@ -1169,7 +1317,8 @@ a:hover {
 }
 
 .modal-message .button {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   letter-spacing: -0.3px;
 }
 
@@ -1189,7 +1338,9 @@ a:hover {
   content: "";
   position: absolute;
   background-color: #000000;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .modal-close::before {
@@ -1227,9 +1378,14 @@ a:hover {
 }
 
 .filters-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 860px;
 }
 
@@ -1296,6 +1452,12 @@ a:hover {
   padding: 8px 0;
   background-color: transparent;
   background-image:
+    -webkit-linear-gradient( 30deg, transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%),
+    -webkit-linear-gradient( 150deg, transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%);
+  background-image:
+    -o-linear-gradient( 30deg, transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%),
+    -o-linear-gradient( 150deg, transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%);
+  background-image:
     linear-gradient( 60deg, transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%),
     linear-gradient( -60deg, transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%);
   background-position:
@@ -1312,6 +1474,12 @@ a:hover {
 
 .filters-sorting select:focus,
 .filters-sorting select:hover {
+  background-image:
+    -webkit-linear-gradient( 30deg, transparent 0%, transparent 50%, #323232 50%, #323232 100%),
+    -webkit-linear-gradient( 150deg, transparent 0%, transparent 50%, #323232 50%, #323232 100%);
+  background-image:
+    -o-linear-gradient( 30deg, transparent 0%, transparent 50%, #323232 50%, #323232 100%),
+    -o-linear-gradient( 150deg, transparent 0%, transparent 50%, #323232 50%, #323232 100%);
   background-image:
     linear-gradient( 60deg, transparent 0%, transparent 50%, #323232 50%, #323232 100%),
     linear-gradient( -60deg, transparent 0%, transparent 50%, #323232 50%, #323232 100%);
@@ -1353,7 +1521,8 @@ a:hover {
   background-color: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0px 3px 0px 0px rgba(171, 171, 171, 0.3);
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(171, 171, 171, 0.3);
+          box-shadow: 0px 3px 0px 0px rgba(171, 171, 171, 0.3);
   cursor: pointer;
 }
 
@@ -1433,7 +1602,8 @@ a:hover {
 
 .filters-form button[type="submit"] {
   display: inline-block;
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   margin-bottom: 15px;
   padding: 9px 30px;
   font: inherit;
@@ -1442,7 +1612,8 @@ a:hover {
   background-color: rgba(248, 247, 244, 0.2);
   border: none;
   border-radius: 18px;
-  box-shadow: inset 0px 0px 0px 2px #ffffff;
+  -webkit-box-shadow: inset 0px 0px 0px 2px #ffffff;
+          box-shadow: inset 0px 0px 0px 2px #ffffff;
 }
 
 .filters-form button[type="submit"]:focus,
@@ -1453,7 +1624,8 @@ a:hover {
 
 .filters-form button[type="submit"]:active {
   background-color: #eaeaea;
-  box-shadow: inset 0px 2px 1px 0px #696969;
+  -webkit-box-shadow: inset 0px 2px 1px 0px #696969;
+          box-shadow: inset 0px 2px 1px 0px #696969;
 }
 
 /*  #CATALOG --------------------------*/
@@ -1469,9 +1641,15 @@ a:hover {
 /*  #PAGINATION -----------------------*/
 
 .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
   padding-bottom: 30px;
   font-weight: 500;
@@ -1520,12 +1698,16 @@ a:hover {
 
 .pagination .pagination-prev {
   margin-right: 12px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .pagination .pagination-next {
   margin-left: 12px;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 .pagination-prev:not([href]),
@@ -1552,6 +1734,8 @@ a:hover {
 /*  #SOCIAL ---------------------------*/
 
 .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -1607,8 +1791,11 @@ a:hover {
 /*  #INFO -----------------------------*/
 
 .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 340px;
   margin: 0;
   padding: 0;
