@@ -786,7 +786,6 @@ a:hover {
 .products {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: stretch;
   align-content: stretch;
   margin-bottom: 5px;
@@ -844,6 +843,7 @@ a:hover {
   margin-right: 2px;
   margin-left: 3px;
   vertical-align: bottom;
+  filter: drop-shadow(0px 1px 3px rgba(49, 50, 53, 0.5));
 }
 
 .products-item-best .products-item-price::before {
@@ -1056,8 +1056,6 @@ a:hover {
   flex-grow: 1;
   width: 60%;
   margin-right: 11px;
-  padding-top: 14px;
-  padding-bottom: 14px;
 }
 
 .subscribe-form .button {
@@ -1292,6 +1290,7 @@ a:hover {
 }
 
 .filters-sorting select {
+  min-width: 170px;
   font: inherit;
   color: inherit;
   padding: 8px 0;
@@ -1300,10 +1299,13 @@ a:hover {
     linear-gradient( 60deg, transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%),
     linear-gradient( -60deg, transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%);
   background-position:
-    right 7px top 15px,
-    right 2px top 15px;
+    right 9px top 13px,
+    right 4px top 13px;
   background-size: 5px 10px;
   background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+          appearance: none;
   cursor: pointer;
   border: none;
 }
