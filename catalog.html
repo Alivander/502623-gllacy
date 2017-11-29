@@ -58,7 +58,7 @@
             <a class="navigation-user-search" href="#">
               <span class="visually-hidden">Поиск по сайту</span>
             </a>
-            <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
+            <form class="form form-search" action="https://echo.htmlacademy.ru" method="get">
               <label>
                 <span class="visually-hidden">Введите запрос для поиска: </span>
                 <input class="input" type="search" name="search" placeholder="Что ищем?">
@@ -67,7 +67,7 @@
           </li>
           <li class="navigation-user-item">
             <a class="navigation-user-login" href="#">Вход</a>
-            <form class="form-login" action="https://echo.htmlacademy.ru" method="post">
+            <form class="form form-login" action="https://echo.htmlacademy.ru" method="post">
               <label>
                 <span class="visually-hidden">Электронная почта: </span>
                 <input class="input" type="email" name="email" placeholder="Электронная почта">
@@ -89,7 +89,7 @@
             <a class="navigation-user-cart" href="#" data-amount="2">
               <span class="visually-hidden">Ваша корзина: </span>2 товара
             </a>
-            <form class="form-cart" action="https://echo.htmlacademy.ru" method="post">
+            <div class="form form-cart">
               <table>
                 <caption class="visually-hidden">Вы выбрали:</caption>
                 <tr>
@@ -128,8 +128,8 @@
                   <td class="form-cart-final-sum" colspan="6">Итого: 750 руб.</td>
                 </tr>
               </table>
-              <button class="button" type="submit">Оформить заказ</button>
-            </form>
+              <a class="button" href="#">Оформить заказ</a>
+            </div>
           </li>
         </ul>
 
