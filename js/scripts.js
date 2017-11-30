@@ -14,7 +14,6 @@ feedbackLink.addEventListener("click", function(evt) {
   feedback.classList.add("modal-show");
   if (localMessageName) {
     messageName.value = localMessageName;
-    messageEmail.focus();
   } else {
     messageName.focus();
   }

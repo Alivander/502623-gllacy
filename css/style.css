@@ -1152,6 +1152,12 @@ a:hover {
   background-color: #f8f7f4;
   background-image:
     -webkit-gradient( linear, left top, left bottom, from(#f8f7f4), to(#f8f7f4)),
+    -webkit-repeating-linear-gradient( 135deg, #92cdff 0px, #92cdff 5px, #f8f7f4 5px, #f8f7f4 10px, #fe9e90 10px, #fe9e90 15px, #f8f7f4 15px, #f8f7f4 20px);
+  background-image:
+    -webkit-gradient( linear, left top, left bottom, from(#f8f7f4), to(#f8f7f4)),
+    -o-repeating-linear-gradient( 135deg, #92cdff 0px, #92cdff 5px, #f8f7f4 5px, #f8f7f4 10px, #fe9e90 10px, #fe9e90 15px, #f8f7f4 15px, #f8f7f4 20px);
+  background-image:
+    -webkit-gradient( linear, left top, left bottom, from(#f8f7f4), to(#f8f7f4)),
     repeating-linear-gradient( -45deg, #92cdff 0px, #92cdff 5px, #f8f7f4 5px, #f8f7f4 10px, #fe9e90 10px, #fe9e90 15px, #f8f7f4 15px, #f8f7f4 20px);
   background-image:
     -webkit-linear-gradient( #f8f7f4 0%, #f8f7f4 100%),
@@ -1252,6 +1258,15 @@ a:hover {
 
 /*  #MODAL  --------------------------*/
 
+@-webkit-keyframes modal-back {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes modal-back {
   0% {
     opacity: 0;
@@ -1261,24 +1276,55 @@ a:hover {
   }
 }
 
-@keyframes modal {
+@-webkit-keyframes modal {
   0% {
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes modal {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes modal-error {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 @keyframes modal-error {
   0%, 100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
@@ -1298,8 +1344,10 @@ a:hover {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
-  animation-name: modal-back;
-  animation-duration: 0.4s;
+  -webkit-animation-name: modal-back;
+          animation-name: modal-back;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
 }
 
 .modal {
@@ -1307,6 +1355,8 @@ a:hover {
 }
 
 .modal-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1317,13 +1367,17 @@ a:hover {
   color: #323232;
   background-color: #f8f7f4;
   border-radius: 10px;
-  animation-name: modal;
-  animation-duration: 0.4s;
+  -webkit-animation-name: modal;
+          animation-name: modal;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
 }
 
 .modal-error {
-  animation-name: modal-error;
-  animation-duration: 0.4s;
+  -webkit-animation-name: modal-error;
+          animation-name: modal-error;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
 }
 
 .modal-message b {
