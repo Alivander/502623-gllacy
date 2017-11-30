@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="index">
 
@@ -64,23 +64,23 @@
               <a class="navigation-user-search" href="#">
                 <span class="visually-hidden">Поиск по сайту</span>
               </a>
-              <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
+              <form class="form form-search" action="https://echo.htmlacademy.ru" method="get">
                 <label>
                   <span class="visually-hidden">Введите запрос для поиска: </span>
-                  <input class="input" type="search" name="search" placeholder="Что ищем?">
+                  <input class="input" type="search" name="search" placeholder="Что ищем?" required>
                 </label>
               </form>
             </li>
             <li class="navigation-user-item">
               <a class="navigation-user-login" href="#">Вход</a>
-              <form class="form-login" action="https://echo.htmlacademy.ru" method="post">
+              <form class="form form-login" action="https://echo.htmlacademy.ru" method="post">
                 <label>
                   <span class="visually-hidden">Электронная почта: </span>
-                  <input class="input" type="email" name="email" placeholder="Электронная почта">
+                  <input class="input" type="email" name="email" placeholder="Электронная почта" required>
                 </label>
                 <label>
                   <span class="visually-hidden">Пароль: </span>
-                  <input class="input" type="password" name="password" placeholder="Пароль">
+                  <input class="input" type="password" name="password" placeholder="Пароль" required>
                 </label>
                 <div class="wrapper wrapper-flex">
                   <button class="button" type="submit">Войти</button>
@@ -279,7 +279,7 @@
             <div class="contacts-text">
               <p>Адрес главного офиса<br>и офлайн-магазина:<b>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</b></p>
               <p>Для заказов по телефону:<b>8 812 450-25-25</b>(с 10 до 20 ежедневно)</p>
-              <a class="button" href="#">Форма обратной связи</a>
+              <a class="button contacts-feedback" href="#">Форма обратной связи</a>
             </div>
             <img class="contacts-map" src="img/map.png" width="1200" height="430" alt="Адрес главного офиса: ул. Большая Конюшенная 19/8, Санкт-Петербург">
             <div class="contacts-map-interactiv">
@@ -341,7 +341,7 @@
 
       </footer>
 
-      <div class="modal modal-background">
+      <div class="modal modal-message-back">
 
         <section class="modal-message">
 
@@ -366,13 +366,9 @@
 
       </div>
 
-      <!--Вспомогательный скрипт для LiveReload,
-          будет удален из итогового файла-->
-      <script>
-      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-      </script>
-
     </div>
+
+    <script src="js/scripts.js"></script>
 
   </body>
 </html>

@@ -1252,7 +1252,37 @@ a:hover {
 
 /*  #MODAL  --------------------------*/
 
-.modal-background {
+@keyframes modal-back {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes modal {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes modal-error {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-message-back {
   position: fixed;
   top: 0;
   left: 0;
@@ -1268,10 +1298,16 @@ a:hover {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
+  animation-name: modal-back;
+  animation-duration: 0.4s;
 }
 
 .modal {
   display: none;
+}
+
+.modal-show {
+  display: flex;
 }
 
 .modal-message {
@@ -1281,6 +1317,13 @@ a:hover {
   color: #323232;
   background-color: #f8f7f4;
   border-radius: 10px;
+  animation-name: modal;
+  animation-duration: 0.4s;
+}
+
+.modal-error {
+  animation-name: modal-error;
+  animation-duration: 0.4s;
 }
 
 .modal-message b {
