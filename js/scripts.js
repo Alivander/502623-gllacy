@@ -20,8 +20,6 @@ feedbackLink.addEventListener("click", function(evt) {
   if (localMessageEmail) {
     messageEmail.value = localMessageEmail;
     messageText.focus();
-  } else {
-    messageEmail.focus();
   }
 });
 

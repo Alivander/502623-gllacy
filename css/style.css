@@ -1208,6 +1208,7 @@ a:hover {
 /*  #CONTACTS -------------------------*/
 
 .contacts {
+  position: relative;
   min-height: 430px;
   font-size: 14px;
   line-height: 20px;
@@ -1220,17 +1221,26 @@ a:hover {
 
 .contacts .container {
   position: relative;
+  z-index: 10;
+  padding-top: 61px;
+  padding-bottom: 61px;
 }
 
 .contacts-map {
+  display: none;
+}
+
+.contacts-map-interactiv {
   position: absolute;
-  clip: rect(0, 0, 0, 0);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .contacts-text {
-  position: absolute;
-  top: 60px;
-  right: 2.3%;
+  margin-right: 2.3%;
+  margin-left: auto;
   width: 300px;
   padding: 30px 25px;
   background-color: #ffffff;
