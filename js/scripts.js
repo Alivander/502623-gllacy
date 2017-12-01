@@ -41,6 +41,7 @@ window.addEventListener("keydown", function(evt) {
 messageForm.addEventListener("submit", function(evt) {
   if (!messageName.value || !messageEmail.value || !messageText.value) {
     evt.preventDefault();
+    feedbackModal.classList.remove("modal-error");
     feedbackModal.classList.add("modal-error");
   } else {
     localStorage.setItem("messageName", messageName.value);
