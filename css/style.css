@@ -1598,6 +1598,10 @@ a:hover {
     linear-gradient( -60deg, transparent 0%, transparent 50%, #323232 50%, #323232 100%);
 }
 
+.filters-sorting select::-ms-expand {
+    display: none;
+}
+
 .filters-form .filters-price {
   position: relative;
   width: 218px;
