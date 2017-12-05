@@ -29,7 +29,7 @@ body {
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 img {
@@ -39,14 +39,14 @@ img {
 a {
   color: inherit;
   -webkit-text-decoration-color: rgba(255, 255, 255, 0.3);
-          text-decoration-color: rgba(255, 255, 255, 0.3);
+  text-decoration-color: rgba(255, 255, 255, 0.3);
 }
 
 a:focus,
 a:hover {
   color: #ffbc9e;
   -webkit-text-decoration-color: rgba(249, 172, 159, 0.3);
-          text-decoration-color: rgba(249, 172, 159, 0.3);
+  text-decoration-color: rgba(249, 172, 159, 0.3);
 }
 
 .input,
@@ -113,15 +113,15 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 .visually-hidden {
@@ -152,7 +152,7 @@ a:hover {
   border: none;
   border-radius: 2.55em;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-          box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   cursor: pointer;
 }
 
@@ -187,7 +187,7 @@ a:hover {
     linear-gradient( to top, rgba(0, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0.07) 100%),
     linear-gradient( to top, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
   -webkit-box-shadow: inset 0px 2px 2px 0px rgb(148, 39, 24);
-          box-shadow: inset 0px 2px 2px 0px rgb(148, 39, 24);
+  box-shadow: inset 0px 2px 2px 0px rgb(148, 39, 24);
 }
 
 
@@ -204,11 +204,11 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .navigation-wrapper {
@@ -216,11 +216,11 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0 2.3%;
 }
 
@@ -250,7 +250,7 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -280,7 +280,7 @@ a:hover {
 .navigation-site-link:active {
   background-color: #ededed;
   -webkit-box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
-          box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
+  box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
 }
 
 .navigation-site-current {
@@ -304,7 +304,7 @@ a:hover {
   list-style: none;
   border-radius: 5px;
   -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .navigation-site-item:hover .navigation-submenu {
@@ -327,7 +327,7 @@ a:hover {
 .navigation-submenu a[href]:active {
   background-color: #f6b5a5;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .navigation-submenu-current,
@@ -361,13 +361,13 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   margin: 0 0 5px;
   padding: 0;
   list-style: none;
@@ -402,7 +402,7 @@ a:hover {
 .navigation-user-item > a:active {
   background-color: #ededed;
   -webkit-box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
-          box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
+  box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
 }
 
 .navigation-user-item a::before {
@@ -508,7 +508,7 @@ a:hover {
   background-color: #f8f7f4;
   border-radius: 5px;
   -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .navigation-user-item:hover .form {
@@ -556,7 +556,7 @@ a:hover {
 .form-login a {
   display: block;
   -webkit-text-decoration-color: rgba(0, 0, 0, 0.3);
-          text-decoration-color: rgba(0, 0, 0, 0.3);
+  text-decoration-color: rgba(0, 0, 0, 0.3);
 }
 
 .form-login a:focus,
@@ -564,7 +564,7 @@ a:hover {
 .form-login a:active {
   color: #e84d37;
   -webkit-text-decoration-color: rgba(232, 77, 55, 0.3);
-          text-decoration-color: rgba(232, 77, 55, 0.3);
+  text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
 .form-cart {
@@ -605,8 +605,8 @@ a:hover {
   position: absolute;
   background-color: #000000;
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .form-cart-remove button::before {
@@ -692,8 +692,8 @@ a:hover {
 .breadcrumbs-wrapper {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .breadcrumbs {
@@ -821,8 +821,8 @@ a:hover {
 
 .actions {
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   margin-bottom: 32px;
   font-weight: 700;
   font-size: 18px;
@@ -835,8 +835,8 @@ a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 48.85%;
   min-height: 229px;
   padding: 18px 0 23px;
@@ -866,7 +866,7 @@ a:hover {
 .actions-item .button {
   margin-right: 20px;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 .actions .berry {
@@ -886,12 +886,12 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  align-content: stretch;
   margin-bottom: 5px;
   padding: 0 1.2%;
 }
@@ -948,7 +948,7 @@ a:hover {
   margin-left: 3px;
   vertical-align: bottom;
   -webkit-filter: drop-shadow(0px 1px 3px rgba(49, 50, 53, 0.5));
-          filter: drop-shadow(0px 1px 3px rgba(49, 50, 53, 0.5));
+  filter: drop-shadow(0px 1px 3px rgba(49, 50, 53, 0.5));
 }
 
 .products-item-best .products-item-price::before {
@@ -974,7 +974,7 @@ a:hover {
   line-height: 22px;
   text-decoration: underline;
   -webkit-text-decoration-color: rgba(255, 255, 255, 0.3);
-          text-decoration-color: rgba(255, 255, 255, 0.3);
+  text-decoration-color: rgba(255, 255, 255, 0.3);
 }
 
 .products-item-hover {
@@ -1009,7 +1009,7 @@ a:hover {
   left: 0;
   border-radius: 5px;
   -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .products-item .button {
@@ -1037,8 +1037,8 @@ a:hover {
 
 .about-us-list.wrapper-flex {
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .about-us-list li {
@@ -1089,7 +1089,7 @@ a:hover {
 
 .blog {
   -ms-flex-item-align: stretch;
-      align-self: stretch;
+  align-self: stretch;
   width: 48.85%;
   min-height: 220px;
   margin-bottom: 38px;
@@ -1121,7 +1121,7 @@ a:hover {
 .blog a {
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-text-decoration-color: #000000;
-          text-decoration-color: #000000;
+  text-decoration-color: #000000;
 }
 
 .blog a:focus,
@@ -1129,7 +1129,7 @@ a:hover {
 .blog a:active {
   color: #e84d37;
   -webkit-text-decoration-color: rgba(232, 77, 55, 0.3);
-          text-decoration-color: rgba(232, 77, 55, 0.3);
+  text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
 /*  #SUBSCRIBE ------------------------*/
@@ -1140,8 +1140,8 @@ a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 48.85%;
   min-height: 220px;
   margin-bottom: 38px;
@@ -1183,22 +1183,22 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: auto 0 8px;
 }
 
 .subscribe-form input {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   width: 60%;
   margin-right: 11px;
 }
 
 .subscribe-form .button {
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -1287,52 +1287,52 @@ a:hover {
 @-webkit-keyframes modal {
   0% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes modal {
   0% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @-webkit-keyframes modal-error {
   0%, 100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    transform: translateX(10px);
   }
 }
 
 @keyframes modal-error {
   0%, 100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    transform: translateX(10px);
   }
 }
 
@@ -1345,18 +1345,18 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-animation-name: modal-back;
-          animation-name: modal-back;
+  animation-name: modal-back;
   -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
+  animation-duration: 0.4s;
 }
 
 .modal {
@@ -1377,16 +1377,16 @@ a:hover {
   background-color: #f8f7f4;
   border-radius: 10px;
   -webkit-animation-name: modal;
-          animation-name: modal;
+  animation-name: modal;
   -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
+  animation-duration: 0.4s;
 }
 
 .modal-error {
   -webkit-animation-name: modal-error;
-          animation-name: modal-error;
+  animation-name: modal-error;
   -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
+  animation-duration: 0.4s;
 }
 
 .modal-message b {
@@ -1403,11 +1403,11 @@ a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   width: 100%;
 }
 
@@ -1424,7 +1424,7 @@ a:hover {
 
 .modal-message .button {
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   letter-spacing: -0.3px;
 }
 
@@ -1445,8 +1445,8 @@ a:hover {
   position: absolute;
   background-color: #000000;
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .modal-close::before {
@@ -1488,10 +1488,10 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 860px;
 }
 
@@ -1578,7 +1578,7 @@ a:hover {
   background-repeat: no-repeat;
   -webkit-appearance: none;
   -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   cursor: pointer;
   border: none;
 }
@@ -1640,7 +1640,7 @@ a:hover {
   border: 8px solid #ffffff;
   border-radius: 50%;
   -webkit-box-shadow: 0px 3px 0px 0px rgba(171, 171, 171, 0.3);
-          box-shadow: 0px 3px 0px 0px rgba(171, 171, 171, 0.3);
+  box-shadow: 0px 3px 0px 0px rgba(171, 171, 171, 0.3);
   cursor: pointer;
 }
 
@@ -1733,7 +1733,7 @@ a:hover {
 .filters-form button[type="submit"] {
   display: inline-block;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   margin-bottom: 15px;
   padding: 9px 30px;
   font: inherit;
@@ -1743,7 +1743,7 @@ a:hover {
   border: none;
   border-radius: 18px;
   -webkit-box-shadow: inset 0px 0px 0px 2px #ffffff;
-          box-shadow: inset 0px 0px 0px 2px #ffffff;
+  box-shadow: inset 0px 0px 0px 2px #ffffff;
 }
 
 .filters-form button[type="submit"]:focus,
@@ -1755,7 +1755,7 @@ a:hover {
 .filters-form button[type="submit"]:active {
   background-color: #eaeaea;
   -webkit-box-shadow: inset 0px 2px 1px 0px #696969;
-          box-shadow: inset 0px 2px 1px 0px #696969;
+  box-shadow: inset 0px 2px 1px 0px #696969;
 }
 
 /*  #CATALOG --------------------------*/
@@ -1775,11 +1775,11 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0;
   padding-bottom: 30px;
   font-weight: 500;
@@ -1829,15 +1829,15 @@ a:hover {
 .pagination .pagination-prev {
   margin-right: 12px;
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .pagination .pagination-next {
   margin-left: 12px;
   -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-          transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .pagination-prev:not([href]),
@@ -1925,7 +1925,7 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   max-width: 340px;
   margin: 0;
   padding: 0;
