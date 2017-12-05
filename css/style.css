@@ -26,8 +26,8 @@ body {
 \*------------------------------------*/
 
 *,
-::before,
-::after {
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -365,12 +365,9 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  max-width: 30%;
   margin: 0 0 5px;
   padding: 0;
   list-style: none;
