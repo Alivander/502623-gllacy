@@ -550,13 +550,14 @@ a:hover {
   border-radius: 16px/22px;
 }
 
-.form-login p {
+.form-login .links {
   margin: 0 2px 0;
   font-size: 13px;
   line-height: 20px;
 }
 
 .form-login a {
+  display: block;
   -webkit-text-decoration-color: rgba(0, 0, 0, 0.3);
           text-decoration-color: rgba(0, 0, 0, 0.3);
 }
