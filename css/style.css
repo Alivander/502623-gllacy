@@ -1959,6 +1959,10 @@ a:hover {
   line-height: 18px;
 }
 
+.copyrignt-logo {
+  display: block;
+}
+
 .copyright img {
   display: block;
   margin: 4px 0 5px 2px;
