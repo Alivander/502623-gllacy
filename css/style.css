@@ -57,6 +57,13 @@ a:hover {
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
+  resize: none;
+  -webkit-transition-duration: 0.1s;
+       -o-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .input:hover,
@@ -154,6 +161,12 @@ a:hover {
   -webkit-box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   cursor: pointer;
+  -webkit-transition-duration: 0.1s;
+       -o-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .button:focus,
@@ -800,6 +813,12 @@ a:hover {
 .slider-wrapper {
   background-position: center top;
   background-repeat: no-repeat;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .slide-1:checked ~ .slider-wrapper {
@@ -815,6 +834,18 @@ a:hover {
 .slide-3:checked ~ .slider-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/slide-3.png");
+}
+
+.slider-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-image:
+    url("../img/slide-1.png"),
+    url("../img/slide-2.png"),
+    url("../img/slide-3.png");
+  background-size: 0 0 ;
 }
 
 /*  #ACTIONS --------------------------*/
@@ -916,6 +947,20 @@ a:hover {
   background-color: rgba(248, 247, 244, 0.2);
 }
 
+.products-item:focus::after,
+.products-item:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -65px;
+  left: 0;
+  z-index: -10;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
 .products-item img {
   width: 100%;
   height: auto;
@@ -982,7 +1027,7 @@ a:hover {
   right: 0;
   bottom: -65px;
   left: 0;
-  padding-bottom: 20px;
+  height: 65px;
   background-color: rgba(248, 247, 244, 0.2);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -999,20 +1044,6 @@ a:hover {
   opacity: 1;
 }
 
-.products-item:focus::after,
-.products-item:hover::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: -65px;
-  left: 0;
-  z-index: -10;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-}
-
 .products-item .button {
   padding-right: 15px;
   padding-left: 15px;
@@ -1024,7 +1055,6 @@ a:hover {
   margin-bottom: 40px;
   padding: 25px 20px 12px;
   color: #323232;
-
   background-color: #ebdec2;
   background-image: url("../img/background-about-us.jpg");
   border-radius: 14px;
@@ -1233,6 +1263,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
+  border: none;
 }
 
 .contacts-text {
@@ -1745,6 +1776,7 @@ a:hover {
   border-radius: 18px;
   -webkit-box-shadow: inset 0px 0px 0px 2px #ffffff;
   box-shadow: inset 0px 0px 0px 2px #ffffff;
+  cursor: pointer;
 }
 
 .filters-form button[type="submit"]:focus,
